@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block title %}Competitions & Résultats{% endblock %}
+
+{% block meta %}
+    <!-- Meta Page -->
+{% endblock %}
+
+{% block stylesheets %}
+    <!-- CSS Page -->
+{% endblock %}
+
+{% block body %}
+    <!-- Content Page -->
+    <div class="col-12 conteneur_h1"><h1>#Compétitions</h1><br/>
+        <p>La Fédération vous accueille dans ses locaux du lundi au jeudi de 9h00 à 12h30 et de 13h30 à 17h30 et le vendredi de 9h00 à 12h30 et de 13h30 à 16h30.<br/> Le standard téléphonique est ouvert tous les matins de 9h00 à 12h30.</p>
+    </div>
+    {% for listeCompetitions in listeCompetitions %}
+    <p>{{listeCompetitions.title}}</p>
+    {% endfor %}
+    
+<div class="col-12 conteneur_link">
+    <a href="{{path('champions')}}"><p class="col-6"><span>#trouverunchampion</span></br>
+        Découvrez tous les champions de la fédération !</p>
+        <div class="col-6 fleche_link"></div>
+    </a>
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Javascript -->
+{% endblock %}

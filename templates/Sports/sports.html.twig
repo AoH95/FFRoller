@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% block title %} Titre de ma page {% endblock %}
+
+{% block meta %}
+    <!-- Meta Page -->
+{% endblock %}
+
+{% block stylesheets %}
+    <!-- CSS Page -->
+{% endblock %}
+
+{% block body %}
+    <!-- Content Page -->
+    <div class="col-12 conteneur_h1_2">
+            <h1>Catégories<br/><span>des sports</span></h1>
+        </div>
+    <div class="fond"></div>
+    <div class="col-12 conteneur_category">
+    {% for listeSports in listeSports %} 
+        {% set img = 1 %}
+        {% set img = img + 1 %}
+        {% set listeSportsTitle = listeSports.title|split(' ') %}
+       <div class="col-2 bloc_category">
+           <center>
+           <img src="../img/{{img}}.png">
+            </center>
+           <a href="{{path('ficheSport', {'slug':listeSports.slug} )}}">
+               <p>{{listeSportsTitle[0]}}
+                <br/>   
+                <span>{{listeSportsTitle[1]}}</span>
+                </p>
+            </a>
+    </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Javascript -->
+{% endblock %}

@@ -1,0 +1,47 @@
+//TAILLE
+$full:100%;
+$demi:50%;
+$quart:25%;
+
+$height_header:80px;
+
+//COULEURS
+//gris
+$light_grey:#DFDFDF;
+$dark_grey:#797979;
+$sep_grey:#FBFAFA;
+//jaune
+$yellow_flash:#FFF245;
+$yellow_pale:#FFF787;
+//noir
+$light_black:#3A3A3B;
+$dark_black:#000000;
+//blanc
+$white:#FFFFFF;
+
+//TYPOS
+//font
+
+//OPEN SANS
+$open:'Open Sans Condensed', sans-serif;
+$open_bold:700;
+$open_light:300;
+
+//ANGELFACE
+@font-face {
+    font-family: "Angelface";
+    src: url("/font/Angelface.otf");
+    }
+$angel:"Angelface", sans-serif;
+$angel_reg:400;
+
+//Work
+$work:"Work Sans", sans-serif;
+$work_light:300;
+$work_reg:400;
+$work_bold:600;
+
+//taille de typos
+$content:16px;
+$title:32px;
+$btn:22px;

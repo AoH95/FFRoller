@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %} 
+
+{% block title %} Titre de ma page {% endblock %}
+
+{% block meta %}
+    <!-- Meta Page -->
+{% endblock %}
+
+{% block stylesheets %}
+    <!-- CSS Page -->
+{% endblock %}
+
+{% block body %}
+    <!-- Content Page -->
+    <div class="col-12 conteneur_h1_2">
+        <h1>#{{listeArticles.id}} <br/><span>{{listeArticles.title}}</span></h1>
+    </div>
+    <div class="fond"></div>
+
+    <div class="col-12 conteneur_article">
+        <h2><span>#</span> {{listeArticles.title}}</h2>
+        <p>{{listeArticles.description|raw}}</p>
+        <br/>
+        <p><i>le {{listeArticles.createdAt|date('d-m-Y') }} par {{listeArticles.author}}</i></p>
+        <br/>
+        <div class="img_article_prev"><img src="{{asset('img/articles/')}}{{listeArticles.image}}"></div>
+    </div>
+
+    <a href="{{path('article')}}"><button class="submit">Toutes les actualités</button></a>        
+
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Javascript -->
+{% endblock %}

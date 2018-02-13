@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+{% block title %} Titre de ma page {% endblock %}
+
+{% block meta %}
+    <!-- Meta Page -->
+{% endblock %}
+
+{% block stylesheets %}
+    <!-- CSS Page -->
+{% endblock %}
+
+{% block body %}
+    <!-- Content Page -->
+    <div data-clubs="{{ listeClubs|json_encode }}"></div>
+
+    <div class="col-12 head_page">
+    <div class="col- conteneur_h2">
+            <div class="yellow_bar"><h2>#Trouver votre club</h2></div>
+    </div>
+    </div>
+    
+    <div class="conteneur_searchbar col-12">
+        <input class="col-11" type="search" placeholder="Paris" name="the_search">
+        <i class="icone_search fa fa-search" aria-hidden="true"></i>
+    </div>
+
+    <div class="col-12 conteneur_clubs_list">
+    {% for listeClubs in listeClubs %}
+        <div class="col-11 conteneur_club">
+            <h3>{{listeClubs.title}}</h3><br/>
+            <p>{{listeClubs.description|raw}}</p>
+            <p>Tel : {{listeClubs.tel}} - Mail : {{listeClubs.mail}}</p>
+            <p>{{listeClubs.site}}</p>
+            <br/>
+            <div class="sep-black col-3"></div>
+        </div>
+    {% endfor %}
+    </div>
+
+    <div id="map"></div>
+<script>
+    var test = {{jsonObj|json_encode|raw}};
+        console.log(test);
+        //var clubs = $('[data-clubs]').data('clubs');
+        //console.log('clubs ' + clubs);
+
+</script>
+
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Javascript -->
+    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAH_ZZ2yFCuljC35ZKTChvDBRS5ZS5Q_EQ&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="{{asset('js/map.js')}}"></script>
+    <script>
+        initMap();
+    </script>
+
+{% endblock %}

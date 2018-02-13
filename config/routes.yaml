@@ -1,0 +1,41 @@
+index:
+    path: /
+    defaults: { _controller: 'App\Controller\DefaultController::index' }
+# nom dans href     
+sport:
+# nom de l'url
+    path: /sports
+# appel du controller + la fonction dans ce dernier (après les ::)
+    defaults: { _controller: 'App\Controller\DefaultController::sports' }
+
+ficheSport:
+    path: /sports/{slug}
+    defaults: { _controller: 'App\Controller\DefaultController::ficheSport' }
+
+clubs:
+    path: /clubs
+    defaults: { _controller: 'App\Controller\DefaultController::clubs' }
+
+article:
+    path: /articles
+    defaults: { _controller: 'App\Controller\DefaultController::articles' }
+
+ficheArticle:
+    path: /articles/{slug}
+    defaults: { _controller: 'App\Controller\DefaultController::ficheArticle' }
+
+competitions:
+    path: /competitions
+    defaults : {_controller : 'App\Controller\DefaultController::competitions'}
+
+espaceClub:
+    path: /espaceClub
+    defaults : {_controller : 'App\Controller\DefaultController::espaceClub'}
+
+contact:
+    path: /contact
+    defaults : {_controller : 'App\Controller\DefaultController::contact'}
+
+champions:
+    path: /champions
+    defaults : {_controller : 'App\Controller\DefaultController::champions'}

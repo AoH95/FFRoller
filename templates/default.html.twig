@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+{% block title %}Home{% endblock %}
+
+{% block meta %}
+    <!-- Meta Page -->
+{% endblock %}
+
+{% block stylesheets %}
+    <!-- CSS Page -->
+{% endblock %}
+
+{% block body %}
+    <!-- Content Page -->
+    <div class="col-12 conteneur_h1">
+        <h1>#Fédération</h1>
+        <br/>
+        <p class="col-10">
+            Avec plus de 50 millions de pratiquants à travers le monde, le roller, le skateboard et la trottinette suscitent un <u>fort engouement</u> populaire.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar rhoncus lacus, vitae scelerisque nibh euismod id. Proin magna libero, vehicula eget iaculis quis, suscipit vestibulum dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla malesuada, est scelerisque maximus varius, eros dui imperdiet mauris, at dictum augue tortor non leo. Phasellus at purus dui. Praesent lobortis velit erat, ultricies pulvinar urna ullamcorper eget. Vestibulum non ante eget massa efficitur mattis eu ut tortor. Mauris ullamcorper orci eu lectus placerat aliquam. Quisque venenatis lobortis blandit. Maecenas interdum condimentum elit, nec varius leo ornare ut. Praesent imperdiet mauris in dolor convallis, a pellentesque ipsum tristique. 
+        </p>
+        <div class="col-12 conteneur_fed">
+            <div class="col-3 bloc_fed">
+                <span>8</span>
+                <p>Disciplines<br/>pratiquées</p>
+            </div>
+            <div class="col-3 bloc_fed">
+                <span>900</span>
+                <p>Clubs<br/>
+                dans le monde</p>
+            </div>
+            <div class="col-3 bloc_fed">
+                <span>5</span>
+                <p>Millions de<br/> pratiquants en france</p>
+                </div>
+            <div class="col-3 bloc_fed">
+                <span>69 163</span>
+                <p>Licenciés en<br/> 2016-2017</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 conteneur_caroussel"> 
+    <div class="col-8 owl-carousel">
+            <div class="handler_hover">
+                    <h3>#Nomsévènements</h3>
+                    <div class="hover_slider">
+                        <p>quelle équipe</p>
+                        <br/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar rhoncus lacus, vitae scelerisque nibh euismod id. Proin magna libero, vehicula eget iaculis quis, suscipit vestibulum dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>
+            </div>
+            <div class="handler_hover">
+                    <h3>#Nomsévènements</h3>
+                    <div class="hover_slider">
+                        <p>quelle équipe</p>
+                        <br/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar rhoncus lacus, vitae scelerisque nibh euismod id. Proin magna libero, vehicula eget iaculis quis, suscipit vestibulum dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>
+            </div>
+            <div class="handler_hover">
+                    <h3>#Nomsévènements</h3>
+                    <div class="hover_slider">
+                        <p>quelle équipe</p>
+                        <br/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar rhoncus lacus, vitae scelerisque nibh euismod id. Proin magna libero, vehicula eget iaculis quis, suscipit vestibulum dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="col-12 conteneur_link">
+            <a href="{{path('sport')}}"><p class="col-6"><span>#trouverunsport</span></br>
+                Découvrez les sports de la fédération !</p>
+                <div class="col-6 fleche_link"></div>
+            </a>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Javascript -->
+    <script type="text/javascript">
+        ScrollSmooth();
+    </script>
+{% endblock %}

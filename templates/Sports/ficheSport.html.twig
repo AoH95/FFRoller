@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %} 
+{% block title %} Titre de ma page {% endblock %}
+
+{% block meta %}
+    <!-- Meta Page -->
+{% endblock %}
+
+{% block stylesheets %}
+    <!-- CSS Page -->
+{% endblock %}
+
+{% block body %}
+    <!-- Content Page -->
+    <div class="col-12 conteneur_h1_blanc">
+        <h1>#{{listeSports.title}}</h1>
+        <p> {{listeSports.description|raw}} </p>
+    </div>
+
+    <div class="col-12 conteneur_ksp">
+        <div class="ligne_ksp col-4 col-xs-12">
+            <h3><span>#1</span>{{listeSports.titlek1}}</h3>
+            <p>{{listeSports.ksp1}}</p>
+        </div>
+
+        <div class="ligne_ksp col-4 col-xs-12">
+            <h3><span>#2</span>{{listeSports.titlek2}}</h3>
+            <p>{{listeSports.ksp2}}</p>
+        </div>
+    
+        <div class="ligne_ksp col-4 col-xs-12">
+            <h3><span>#3</span>{{listeSports.titlek3}}</h3>
+            <p>{{listeSports.ksp3}}</p>
+        </div>
+    </div>
+
+    <div class="col-12 conteneur_caroussel"> 
+        <div class="col-8 owl-carousel">
+            {% for listeArticles in listeArticles %}
+            <div class="background-carroussel">
+            <div class="handler_hover">
+                    <h3>#Articles</h3>
+                    <div class="hover_slider">
+                        <p>{{ listeArticles.title }}</p>
+                        <br/>
+                        <p>{{ listeArticles.description|raw }}</p>
+                    </div>
+            </div>
+        </div>
+            {% endfor %}
+          </div>
+    </div>
+
+    <div class="col-12 conteneur_link">
+            <a href="{{path('clubs')}}"><p class="col-6"><span>#trouverunclub</span></br>
+                Trouver un club près de chez vous !</p>
+                <div class="col-6 fleche_link"></div>
+            </a>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Javascript -->
+    <script>
+        var a = {{listeArticles[0].image}};
+        
+        $('.background-carroussel').parent().css("background-image","a");
+        console.log(a);
+    </script>
+{% endblock %}

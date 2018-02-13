@@ -1,0 +1,31 @@
+.conteneur_searchbar{
+    input{
+        border:1px solid $sep_grey;
+        background-color: $sep_grey;
+        height: 40px;
+        margin: 0px 4%;
+        color:$dark_grey;
+        padding: 2px 10px;
+    }
+    i{
+        position: relative;
+        top: -30px;
+        right:-93%;
+        cursor:pointer;
+    }
+}
+
+.conteneur_club{
+    margin:0 5%;
+    margin-bottom:20px;
+    h3{
+        font-family: $open;
+        font-size:$title;
+        font-weight: $open_bold;
+    }
+    p{
+        font-family:$work;
+        font-size:$content;
+        font-weight: $work_reg;
+    }
+}

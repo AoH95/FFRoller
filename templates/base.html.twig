@@ -1,0 +1,221 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block meta %}{% endblock %}
+        <title>FFRoller Sports | {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Work+Sans:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{asset('plugin/owlcarousel/assets/owl.carousel.min.css')}}"/>
+        <link rel="stylesheet" type="text/css" href="{{asset('plugin/owlcarousel/assets/owl.theme.default.min.css')}}"/>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <!-- INTRO 
+        //php -S 127.0.0.1:8000 -t public
+        -->
+        {% if app.request.attributes.get('_route') in include_route_intro_index %}
+            <div id="intro" class="col-12 intro">
+                <div class="col- conteneur_h2 spe_home">
+                    <div class="yellow_bar bar_intro"><h2>#Bienvenue</h2></div>
+                </div>
+                <div class="col-12 intro_p_conteneur">
+                    <p>
+                        <span><i>Sur le site de la Fédération Française de Roller Sports</i></span><br/><br/>Avec plus de 50 millions de pratiquants à travers le monde, le roller, le skateboard et la trotinette suscitent un fort enfouement populaire tant comme pratique sportive, que comme loisir ou comme moyen de locomotion.
+                    </p>
+                    <div class="bouton_ensv">en savoir +</div>
+                    <div class="col-12 fleche_bas bounce">
+                        <center>
+                            <a href="#top_menu" class="scrollTo">
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                            </a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        <!-- FIN INTRO -->
+        <!-- HEADER DESKTOP -->
+        <header rel="top_menu" class="col-12 desktop">
+            <div class="col-2 logo_conteneur">
+                <a href="{{path('index')}}"><div class="logo_image"></div></a>
+            </div>
+            <div class="col-10 menu_nav">
+                <nav>
+                    <ul class="menu_deroulant font_menu">
+                        <li><a href="{{path('index')}}">Fédération</a> <span>|</span></li>    
+                        <li class="sportCatMenuTitle"><a href="{{path('sport')}}">Sports</a>  <span>|</span>
+                            <!-- liste menu deroulant -->
+                            <ul class="deroulant sportCatMenuTitle">
+                                <li class="sports"><a href="{{path('sport')}}/patinage-artistique">Patinage Artistique</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-course">Roller Course</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-derby">Roller Derby</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-freestyle">Roller Freestyle</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-randonnee">Roller Randonnée</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/rink-hockey">Rink Hockey</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-hockey">Roller Hockey</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/skateboard">Skateboard</a></li>
+                            </ul>
+                            <!-- fin liste menu deroulant -->
+                        </li>
+                        <li><a href="{{path('competitions')}}">Compétitions & Résultats</a>  <span>|</span></li>
+                        <li><a href="{{path('espaceClub')}}">Espace Club & Licencié</a>  <span>|</span></li>
+                        <li><a href="{{path('contact')}}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="limit_retour" class="col-"></div>
+        <!-- FIN HEADER DESKTOP -->
+        
+        <!-- HEADER MOBILE -->
+        <header id="top_menu" class="col-12 mobile">
+            <div class="col-6 logo_conteneur">
+                    <a href="{{path('index')}}"><div class="logo_image"></div></a>
+            </div>
+            
+            <div class="col-6 burger_conteneur">
+                <div class="logo_burger">
+                    <i id="burger-icon" class="fa fa-bars fa-3" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+            <div class="col-12 menu_nav_mobile">
+                <nav class="nav_mobile">
+                    <div class="col-12 logo_conteneur">
+                        <div class="logo_image logo_mobile"></div>
+                    </div>
+                    
+                    <ul class="menu_deroulant_mobile font_menu">
+                        <li><a href="{{path('index')}}">Fédération</a></li>
+                        <li class="sportCatMenuTitle_mobile"><a href="{{path('sport')}}">Sports</a>
+                            <!-- liste menu deroulant -->
+                            <ul class="deroulant sportCatMenuTitle_mobile">
+                                <li class="sports"><a href="{{path('sport')}}/patinage-artistique">Patinage Artistique</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-course">Roller Course</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-derby">Roller Derby</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-freestyle">Roller Freestyle</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-randonnee">Roller Randonnée</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/rink-hockey">Rink Hockey</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/roller-hockey">Roller Hockey</a></li>
+                                <li class="sports"><a href="{{path('sport')}}/skateboard">Skateboard</a></li>
+                            </ul>
+                            <!-- fin liste menu deroulant -->
+                        </li>
+                        <li><a href="{{path('competitions')}}">Compétitions & Résultats</a>  <span></span></li>
+                        <li><a href="{{path('espaceClub')}}">Espace Club & Licencié</a>  <span> </span></li>
+                        <li><a href="{{path('contact')}}">Contact</a></li>
+                    </ul>
+                    <div class="col-7 conteneur_rs_mobile">
+                        <ul>
+                            <li>
+                                <a href="#" alt="lien facebook">
+                                    <div>
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" alt="lien twitter">
+                                    <div>
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" alt="lien instagram">
+                                    <div>
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" alt="lien youtube">
+                                    <div>
+                                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    <div class="col- bordure_bas_menu">
+                    <p>&copy; Fédération Française de Roller Sport - 2018</p>
+                    </div>
+                </div>
+                    <br/>
+                    <i id="burger-icon2" class="fa fa-times fa-3 close_burger" aria-hidden="true"></i>
+                </nav>
+            </div>
+        </header>
+         <!-- FIN HEADER MOBILE -->
+
+         {% block body %}{% endblock %}
+
+<!-- FOOTER DESKTOP -->
+
+<footer class="col-12">
+    
+    <div class="conteneur_footer_rs">
+        <ul>
+            <li>Suivez toutes nos actualités sur</li>
+            <li>
+                <a href="#" alt="lien facebook">
+                    <div>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" alt="lien twitter">
+                    <div>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" alt="lien instagram">
+                    <div>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" alt="lien youtube">
+                    <div>
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+     
+    <div class="col-12 conteneur_footer_nav">
+        <div class="col-3 logo_conteneur">
+            <div class="logo_image"></div>
+        </div>
+        
+        <div class="col-9 nav_footer">
+            <ul>
+                <li><a href="">Nous rejoindre</a>|</li>
+                <li><a href="">Plan du site</a>|</li>
+                <li><a href="">Mentions légales</a>|</li>
+                <li><a href="{{path('article')}}">Archives</a></li>
+            </ul>
+            <br/>
+            <p class="copyright">&copy; Tous droits réservés - 2018</p>
+        </div>
+    </div>
+</footer>
+<!-- FIN FOOTER DESKTOP -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="{{asset('plugin/owlcarousel/owl.carousel.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/main.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/menu.js')}}"></script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

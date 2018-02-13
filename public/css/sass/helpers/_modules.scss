@@ -1,0 +1,480 @@
+//CONTENEUR h1 TOP PAGE 1
+.conteneur_h1{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 20px 20px;
+    color: $white;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    h1{
+        text-transform: uppercase;
+        font-family: $open;
+        font-weight: $open_bold;
+        font-size:$title;
+    }
+    p{
+        font-family: $work;
+        font-weight: $work_reg;
+        font-size: $content;
+        margin: 0 9%;
+        line-height: 1.5;
+        padding: 0 6%;
+    }
+}
+
+//CONTENEUR h1 TOP PAGE 1 blanc
+.conteneur_h1_blanc{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px 20px;
+    color: $dark_black;
+    background-image: url(../img/hockey.jpg);
+    background-size: cover;
+    h1{
+        text-transform: uppercase;
+        font-family: $open;
+        font-weight: $open_bold;
+        font-size:$title;
+    }
+    p{
+        margin:10px 20%;
+        font-family: $work;
+        font-weight: $work_reg;
+        font-size: $content;
+    }
+}
+
+//CONTENEUR h1 TOP PAGE 2
+.conteneur_h1_2{
+    background-image: url(../img/logo.png);
+    height: 175px;
+        h1{
+        text-transform: uppercase;
+        padding-top:50px;
+        padding-left:50px;
+        font-family:$open;
+        font-weight:$open_bold;
+        font-size:$title;
+        color:$yellow_pale;
+        z-index: 5;
+        position: relative;
+        span{
+            font-family:$angel;   
+            color:$white;  
+            font-size:44px;
+            text-transform: lowercase;
+        }
+    }
+}
+
+div.fond{
+        z-index: 4;
+        position: relative;
+        top:80px;
+        height: 175px;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 24em;
+        left:-33px;
+        -webkit-transform: skew(-20deg); 
+        -moz-transform: skew(-20deg); 
+        -o-transform: skew(-20deg);
+}
+
+//CONTENEUR KSP FICHE SPORT
+.conteneur_ksp{
+    background-color:$dark_black;
+    color:$white;
+    div.ligne_ksp{
+        margin:25px 0px;
+        float: left;
+        text-align: center;
+        span{
+            padding-right: 5px;
+            color:$yellow_flash;
+            font-family:$open;
+            font-weight: $open_bold;
+        }
+        h3{
+            padding:0 27%;
+            text-transform: uppercase;
+            font-family:$open;
+            font-weight: $open_bold;
+        }
+        p{
+            margin-top:15px;
+            padding:0 13%;
+            font-family: $work;
+            font-weight: $work_reg;
+        }
+    }
+}
+
+//BLOC LINK CLUB/COMPET
+.conteneur_link{
+    padding:20px;
+    background-color: $light_black;
+    p{
+        margin-left: 5%;
+        text-align: right;
+        color:white;
+        font-size:$content;
+        font-family: $open;
+        span{
+            color:$dark_black;
+            text-transform: uppercase;
+            font-size:$title;
+            }
+        }
+
+    .fleche_link{
+        background-image: url(../img/flech.png);
+        background-size:cover;
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        width: 45px;
+        height: 26px;   
+        margin-top: 22px;
+        margin-left: 20px;
+    }
+}
+
+//BLOC CATEGORY
+.conteneur_category{
+    background-color: $white;
+        img{
+            margin-top: 22%;
+            height: 50px;
+            width: 50px;
+            padding:1%;
+        }
+        .bloc_category:nth-child(2n){
+            background-color:$light_black;
+        }
+        .bloc_category{
+            -webkit-transition: all 500ms;
+            -moz-transition: all 500ms;
+            -o-transition: all 500ms;
+            transition: all 500ms;
+            height: 250px;
+            background-color: $light_grey;
+            margin: 50px 60px;
+            a{
+                p{
+                    font-family:$open;
+                    font-weight:$open_bold;
+                    font-size:$title;
+                    text-align: center;
+                    color:$yellow_pale;
+                    span{
+                        font-family:$angel;
+                        font-size:44px;
+                        color:$dark_black;
+
+                    }
+                }
+            }
+        }
+}
+.bloc_category:hover{
+    background-image:url(../img/logo.png);
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+    }
+
+//CAROUSSEL
+.owl-carousel{
+    height: 410px;
+}
+.owl-stage{
+    .owl-item{
+        background-size: cover;
+        text-align: center;
+        height: 400px;
+        .background-carroussel{
+            height: 100%;
+        }
+        div.handler_hover{
+        margin: 1%;
+        margin-top: 5px;
+        background-color:rgba(255, 255, 255, 0.8);
+        position: relative;
+        top: 75%;
+        transition:0.3s;
+        margin-top: 29px;
+        &:hover{
+            transition:0.3s;
+            top:0px;
+            padding-top:5px;
+            margin-top: 5px;
+            > .hover_slider{
+                transition:0.3s;
+                display: block;
+                min-height: 315px;
+                padding: 2% 4%;
+            }
+        }
+        h3{
+            padding:3%;
+            font-size:$title;
+            text-transform: uppercase;
+            font-family: $work;
+        }
+            div.hover_slider{
+                display:none;
+                    span{
+                        padding-top:10%;
+                    }
+                    p{
+
+                    }
+            }
+        }
+    }
+}
+
+div.handler_hover:hover{ 
+    top:0px;
+    div.hover_slider{
+        display: block;
+    }
+}
+
+.conteneur_caroussel{
+    margin: 40px 0;
+    .owl-nav{
+        position:relative;
+        top: -220px;
+        .owl-next{
+            position:relative;
+            width: 100px;
+            height: 57px;
+            background-size: cover;
+            top: -57px;
+            float: right;
+            background-image: url(../img/flech.png);
+            -webkit-transform:rotate(-90deg);
+            -ms-transform:rotate(-90deg);
+            -o-transform:rotate(-90deg);
+            transform:rotate(-90deg);
+            -moz-transform:rotate(-90deg);
+        }
+        .owl-prev{
+            position:relative;
+            width: 100px;
+            height: 57px;
+            background-size: cover;
+            background-image: url(../img/flech.png);
+            -webkit-transform:rotate(90deg);
+            -ms-transform:rotate(90deg);
+            -o-transform:rotate(90deg);
+            transform:rotate(90deg);
+            -moz-transform:rotate(90deg);
+        }
+    }
+}
+
+//BARRE NOIRE
+.-black{
+    background-color:$dark_black;
+    height: 2px;
+}
+
+//BARRE JAUNE
+.yellow_bar{
+    height: 7px;
+    margin-bottom: 20px;
+    background-color: $yellow_pale;
+}
+//CONTENEUR H2
+.conteneur_h2{
+    margin-top: 50px;
+    h2{
+        font-family: $open;
+        font-weight: $open_bold;
+        font-size:$title;
+        margin-top:20px;
+        margin-bottom: 10px;
+        text-transform:uppercase;
+        position: relative;
+        top: -32px;
+    }
+    p.name_user{
+        font-family:$work;
+        font-weight: $work_reg;
+        margin-left:60px;
+        font-size:$btn;
+        margin-bottom: 20px;
+    }
+}
+
+.contact{
+    padding:0 15%;
+}
+//FORMULAIRE
+.formulaire{
+    margin-top: 10px;
+    clear: left;
+    margin: 0 17%;
+    select, input:not(.submit), textarea{
+        border:1px solid $light_grey;
+        width: 95%;
+        margin-bottom: 10px;
+        padding:5px;  
+        transform-style: none;  
+        background-color: $light_grey;
+        font-family: $open;
+        font-weight: $open_bold;
+        font-size:$content;
+    }
+    select{
+        border:1px solid $dark_black;
+        background-color:$white;
+    }
+}
+
+.submit{
+    font-family: $open;
+    font-weight: $open_bold;
+    font-size:$content;
+    color:$white;
+    background-color: $light_black;
+    border:1px solid $light_black;
+    padding: 5px 20px;
+    text-transform:uppercase;
+    margin:10px 0;
+}
+
+//CONTENEUR_ESPACE_LICENSE
+.conteneur_espace_license{
+    margin:0 15%;
+    margin-bottom: 50px;
+    .case_license{
+        padding-top:40px;
+        height: 250px;
+        background-color: $yellow_pale;
+        margin:1% 2.5%;
+    }
+    .case_license:nth-child(2n){
+        background-color:$light_black;
+    }
+    p{
+        text-align: center;
+        color:$dark_black;
+        font-family:$work;
+        font-weight: $work_reg;
+        font-size:$btn;
+    }
+    p.white{
+        color: $white;
+    }
+}
+
+.logo_case{
+    background-image: url(../img/logo.png);
+    width: 100px;
+    height: 100px;
+    background-size:cover;
+    background-position: center;
+    margin: auto;
+    margin-bottom:10px;
+}
+
+//UTIL
+.head_page{
+    padding: 0px 4%;
+}
+
+//RESPONSIVE
+
+//NAV MENU
+
+@media screen and (max-width:1293px){
+
+}
+
+@media screen and (min-width:1294px){
+   
+}
+
+//MOBILE
+
+@media screen and (max-width:479px){
+    .conteneur_h2{
+        margin-top: 30px!important;
+    }
+
+    //FORMULAIRE
+    .formulaire{
+        width:100%;
+        margin: 0 0%;
+    }
+    .nous_trouver{
+        width: 100%;
+        padding-right: 10px;
+    }
+    //CAROUSSEL
+.owl-stage{
+    .owl-item{
+    }
+}
+
+.conteneur_caroussel{
+    margin-top:40px;
+    margin-bottom: -20px;
+    .owl-nav{
+        position:relative;
+        top: -110px;
+        .owl-next{
+            position:relative;
+            width: 50px;
+            height: 28px;
+            background-size: cover;
+            top: -28px;
+            float: right;
+            background-color:green;
+            background-image: url(../img/flech.png);
+            -webkit-transform:rotate(-90deg);
+            -ms-transform:rotate(-90deg);
+            -o-transform:rotate(-90deg);
+            transform:rotate(-90deg);
+            -moz-transform:rotate(-90deg);
+        }
+        .owl-prev{
+            position:relative;
+            width: 50px;
+            height: 28px;
+            background-size: cover;
+            background-color:green;
+            background-image: url(../img/flech.png);
+            -webkit-transform:rotate(90deg);
+            -ms-transform:rotate(90deg);
+            -o-transform:rotate(90deg);
+            transform:rotate(90deg);
+            -moz-transform:rotate(90deg);
+            }
+        }
+    }
+
+    .contact{
+        padding: 0 2%!important;
+    }
+}
+
+
+//TABLETTE
+@media screen and (min-width:480px) and (max-width:959px){
+    .conteneur_espace_license{
+        margin:0 11%;
+        margin-bottom: 20px;
+    }
+}
+/*
+//MEDIUM SCREEN
+@media screen and (min-width:960px) and (max-width:1280px){}
+//DESKTOP
+@media screen and (max-width:1281px){}
+*/

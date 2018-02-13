@@ -1,0 +1,26 @@
+.conteneur_adresse{
+    background-color: $light_grey;
+    text-align: center;
+    padding: 20px 0;
+    color: $dark_black;
+        i{
+        font-size:$title;
+        }
+        span{
+        font-family:$open;
+        font-weight: $open_bold;
+        }   
+        p{
+        font-family:$work;
+        }
+}
+/*
+.nous_trouver{
+    background-image: url(../img/logo.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding-right: 20px;
+    height: 250px;
+}
+*/

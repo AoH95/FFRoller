@@ -1,0 +1,188 @@
+//NAV MENU
+//DESKTOP
+
+.fixed {
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    box-shadow: 8px 8px 20px $light_black;;
+    z-index:6000
+}
+
+.font_menu{
+    font-family: $open;
+    font-weight: $open_bold;
+    text-transform: uppercase;
+}
+
+header{
+    height: $height_header;
+    background-color: $white;
+    div.logo_conteneur{
+        height: $height_header;
+        div.logo_image{
+            height: 60px;
+            max-height: 60px;
+            max-width: 105px;
+            margin:8px 0 0 30px;
+            background-image: url(../img/logo.png);
+            background-size: cover;
+            background-position: center;
+        }
+}
+    
+div.menu_nav{
+        nav{
+            float: right;
+            ul.menu_deroulant{
+                width: auto;
+                list-style: none;
+                margin: auto;
+                margin-top: 30px;
+                margin-right:20px;
+                li:not(.sports){
+                    display: inline-block;
+                    span{
+                        padding: 0 10px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $dark_black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sportCatMenuTitle:not(.deroulant){
+    height: 50px;
+}
+
+.sportCatMenuTitle:hover .deroulant{
+    left: auto;
+    margin-left: -50px;
+}
+
+ul.deroulant{
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: $white;
+}
+
+  ul.deroulant li.sports{
+    margin:2px 0 2px 0;
+    text-align: center;
+    display: inherit;
+}
+
+//TABLETTE & MOBILE
+
+header.mobile{
+    display: none;
+    .logo_mobile{
+        margin:-15px auto!important;
+    }
+    
+    div.burger_conteneur{
+        div.logo_burger{
+            float: right;
+            margin:20px 30px 0 0;
+            i{
+                font-size:40px;
+            }
+        }
+    }
+    
+    .menu_nav_mobile{
+        .nav_mobile{
+            z-index: 5000;
+            position: fixed;
+            left: 0%;
+            background-color: $sep_grey;
+            width: 100%;
+            top: 0px;
+            padding-top: 80px;
+            div{
+                ul{
+                    margin: auto;
+                    margin-left: 33%;
+                    width: $demi;
+                    li{
+                        width: 13%;
+                        display: inline-block;
+                        float: left;
+                        list-style: none;
+                        margin: 15px 0px 15px 12%;
+                    }
+                }
+            }
+            div.bordure_bas_menu{
+                height: 2px;
+                background-color: red;
+                margin-left:33%;
+                p{
+                    text-align: center;
+                    margin-top: 15px;
+                }
+            }
+        }
+        .menu_deroulant_mobile{
+            text-align: center;
+            list-style: none;
+                .sportCatMenuTitle_mobile{
+                margin-top: 0px;
+                height: auto;
+            }
+        }
+        .fa-times{
+            font-size: 40px;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+    }
+}
+
+.sportCatMenuTitle_mobile:not(.deroulant){
+    height: 50px;
+}
+
+.sportCatMenuTitle_mobile:hover .deroulant{
+    position: relative;
+    left: auto;
+}
+
+.conteneur_rs_mobile{
+    margin-left: 15%;
+
+}
+//RESPONSIVE
+@media screen and (max-width:1293px){
+    .nav_mobile{display: none;}
+}
+
+@media screen and (min-width:1294px){
+    
+}
+
+//MOBILE
+
+@media screen and (max-width:479px){}
+@media screen and (max-width:959px){
+    header.mobile{display:block;}
+    header.desktop{display:none;}
+}
+/*
+//TABLETTE
+@media screen and (min-width:480px) and (max-width:959px){}
+//MEDIUM SCREEN
+@media screen and (min-width:960px) and (max-width:1280px){}
+//DESKTOP
+@media screen and (max-width:1281px){}
+*/

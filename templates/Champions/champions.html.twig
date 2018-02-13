@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+{% block title %} Titre de ma page {% endblock %}
+
+{% block meta %}
+    <!-- Meta Page -->
+{% endblock %}
+
+{% block stylesheets %}
+    <!-- CSS Page -->
+{% endblock %}
+
+{% block body %}
+    <!-- Content Page -->
+
+    <div class="col-12 conteneur_h1"><h1>#Champions</h1><br/>
+        <p>La Fédération vous accueille dans ses locaux du lundi au jeudi de 9h00 à 12h30 et de 13h30 à 17h30 et le vendredi de 9h00 à 12h30 et de 13h30 à 16h30.<br/> Le standard téléphonique est ouvert tous les matins de 9h00 à 12h30.</p>
+    </div>
+
+    <div class="col-12 conteneur_caroussel"> 
+        <div class="col-8 owl-carousel">
+                {% for listeChampions in listeChampions %}
+            <div class="handler_hover">
+                    <h3>#Champions</h3>
+                    <div class="hover_slider">
+                        <p>{{listeChampions.title}}</p>
+                        <br/>
+                        <p>{{listeChampions.description|raw}}</p>
+                    </div>
+            </div>
+            {% endfor %}
+          </div>
+    </div>
+
+    <div class="col-12 conteneur_link">
+        <a href="{{path('clubs')}}"><p class="col-6"><span>#trouverunclub</span></br>
+            Trouver un club près de chez vous !</p>
+            <div class="col-6 fleche_link"></div>
+        </a>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Javascript -->
+{% endblock %}
