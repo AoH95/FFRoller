@@ -11,3 +11,5 @@
 !var/SymfonyRequirements.php
 
 /vendor/*
+
+.env
