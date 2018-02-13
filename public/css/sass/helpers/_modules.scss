@@ -30,6 +30,14 @@
     color: $dark_black;
     background-image: url(../img/hockey.jpg);
     background-size: cover;
+    div.fond_blanc{
+        width: 80%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1% 2%;
+        margin-top:80px;
+        margin-bottom:80px;
+        }
     h1{
         text-transform: uppercase;
         font-family: $open;
@@ -37,7 +45,6 @@
         font-size:$title;
     }
     p{
-        margin:10px 20%;
         font-family: $work;
         font-weight: $work_reg;
         font-size: $content;
