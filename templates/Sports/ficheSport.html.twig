@@ -12,8 +12,10 @@
 {% block body %}
     <!-- Content Page -->
     <div class="col-12 conteneur_h1_blanc">
-        <h1>#{{listeSports.title}}</h1>
-        <p> {{listeSports.description|raw}} </p>
+        <div class="fond_blanc">
+            <h1>#{{listeSports.title}}</h1>
+            <p> {{listeSports.description|raw}} </p>
+        </div>
     </div>
 
     <div class="col-12 conteneur_ksp">
@@ -37,7 +39,7 @@
         <div class="col-8 owl-carousel">
             {% for listeArticles in listeArticles %}
             <div class="background-carroussel">
-            <div class="handler_hover">
+            <div class="handler_hover" data-image="{{listeArticles.image}}">
                     <h3>#Articles</h3>
                     <div class="hover_slider">
                         <p>{{ listeArticles.title }}</p>
@@ -61,9 +63,14 @@
 {% block javascripts %}
     <!-- Javascript -->
     <script>
-        var a = {{listeArticles[0].image}};
-        
-        $('.background-carroussel').parent().css("background-image","a");
-        console.log(a);
+            elements = document.querySelectorAll(".handler_hover");
+            console.log(elements);
+            for (var i = 0; i < elements.length; i++) {
+                var image = $(elements[i]).attr("data-image");
+                console.log(image);
+                var a = "/img/articles/"+image;
+                $(elements[i]).parent().css("background-image","url("+a+")");
+
+              }
     </script>
 {% endblock %}
