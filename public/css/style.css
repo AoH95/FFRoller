@@ -380,7 +380,8 @@ div.fond {
     margin-left: 20px; }
 
 .conteneur_category {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  margin-bottom: 4%; }
   .conteneur_category img {
     margin-top: 22%;
     height: 50px;
@@ -395,7 +396,8 @@ div.fond {
     transition: all 500ms;
     height: 250px;
     background-color: #DFDFDF;
-    margin: 50px 60px; }
+    margin: 0px 4%;
+    margin-top: 4%; }
     .conteneur_category .bloc_category a p {
       font-family: "Open Sans Condensed", sans-serif;
       font-weight: 700;
@@ -426,12 +428,11 @@ div.fond {
     background-size: cover; }
   .owl-stage .owl-item div.handler_hover {
     margin: 1%;
-    margin-top: 5px;
     background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     top: 75%;
     transition: 0.3s;
-    margin-top: 29px; }
+    margin-top: 32px; }
     .owl-stage .owl-item div.handler_hover:hover {
       transition: 0.3s;
       top: 0px;
@@ -440,7 +441,7 @@ div.fond {
       .owl-stage .owl-item div.handler_hover:hover > .hover_slider {
         transition: 0.3s;
         display: block;
-        min-height: 315px;
+        min-height: 320px;
         padding: 2% 4%; }
     .owl-stage .owl-item div.handler_hover h3 {
       padding: 3%;

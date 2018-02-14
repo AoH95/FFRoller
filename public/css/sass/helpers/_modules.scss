@@ -143,6 +143,7 @@ div.fond{
 //BLOC CATEGORY
 .conteneur_category{
     background-color: $white;
+    margin-bottom:4%;
         img{
             margin-top: 22%;
             height: 50px;
@@ -159,7 +160,8 @@ div.fond{
             transition: all 500ms;
             height: 250px;
             background-color: $light_grey;
-            margin: 50px 60px;
+            margin: 0px 4%;
+            margin-top:4%;
             a{
                 p{
                     font-family:$open;
@@ -200,12 +202,11 @@ div.fond{
         }
         div.handler_hover{
         margin: 1%;
-        margin-top: 5px;
         background-color:rgba(255, 255, 255, 0.8);
         position: relative;
         top: 75%;
         transition:0.3s;
-        margin-top: 29px;
+        margin-top: 32px;
         &:hover{
             transition:0.3s;
             top:0px;
@@ -214,7 +215,7 @@ div.fond{
             > .hover_slider{
                 transition:0.3s;
                 display: block;
-                min-height: 315px;
+                min-height: 320px;
                 padding: 2% 4%;
             }
         }
