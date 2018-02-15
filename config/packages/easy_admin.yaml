@@ -2,6 +2,22 @@ easy_admin:
     entities:
         Category:
             class: App\Entity\Category
+            form:
+                fields:
+                - { property: 'title' }
+                - { property: 'slug' }
+                - { property: 'status' }
+                - { property: 'description' }
+                - { property: 'createdAt' }
+                - { property: 'updatedat' }
+                - { property: 'deletedat' }
+                - { property: 'imageFile', type: 'file'}
+                - { property: 'ksp1'}
+                - { property: 'ksp2'}
+                - { property: 'ksp3'}
+                - { property: 'titlek1'}
+                - { property: 'titlek2'}
+                - { property: 'titlek3'}
         
         Champions:
             class: App\Entity\Champions

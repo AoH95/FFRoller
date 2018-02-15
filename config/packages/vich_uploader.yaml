@@ -2,6 +2,7 @@ parameters :
     app.path.articles : /img/articles
     app.path.competitions : /img/competitions
     app.path.champions : /img/champions
+    app.path.category : /img/category
 
 vich_uploader:
     db_driver: orm
@@ -18,3 +19,7 @@ vich_uploader:
         champions:
             uri_prefix: '%app.path.champions%'
             upload_destination: '%kernel.project_dir%/public/img/champions'
+
+        category:
+            uri_prefix: '%app.path.category%'
+            upload_destination: '%kernel.project_dir%/public/img/category'
