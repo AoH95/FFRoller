@@ -9,6 +9,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
  * @Vich\Uploadable
+ * @ORM\Table(name="ffroller_articles")
  */
 class Articles
 {
@@ -350,7 +351,6 @@ class Articles
         {
             return $this->image;
         }
-        
         
         public function __toString(){
             return (string) $this->getTitle();

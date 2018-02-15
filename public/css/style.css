@@ -263,12 +263,12 @@ footer div.conteneur_footer_nav {
 @media screen and (max-width:1281px){}
 */
 .conteneur_h1 {
-  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 20px 20px;
   color: #FFFFFF;
-  background-image: url(../img/logo.png);
-  background-size: cover; }
+  background-image: url(../img/accueil/page-accueil.png);
+  background-size: cover;
+  background-position: top; }
   .conteneur_h1 h1 {
     text-transform: uppercase;
     font-family: "Open Sans Condensed", sans-serif;
@@ -302,6 +302,8 @@ footer div.conteneur_footer_nav {
 
 .conteneur_h1_2 {
   background-image: url(../img/logo.png);
+  background-size: cover;
+  background-position: center;
   height: 175px; }
   .conteneur_h1_2 h1 {
     text-transform: uppercase;
@@ -548,7 +550,7 @@ div.handler_hover:hover {
   margin: 10px 0; }
 
 .conteneur_espace_license {
-  margin: 0 15%;
+  margin: 0 7%;
   margin-bottom: 50px; }
   .conteneur_espace_license .case_license {
     padding-top: 40px;
@@ -755,6 +757,9 @@ div.handler_hover:hover {
 //DESKTOP
 @media screen and (max-width:1281px){}
 */
+.bg_category {
+  background-image: url(../img/category/page-categorie.png); }
+
 @media screen and (max-width: 1293px) {
   .conteneur_category img {
     margin-top: 15%; }
@@ -872,6 +877,13 @@ button.submit {
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
     font-weight: 400; }
+
+.bg_competition {
+  background-image: url(../img/competitions/page-competition.png); }
+
+.bg_champions {
+  background-image: url(../img/category/page-categorie.png);
+  background-color: rgba(0, 0, 0, 0.7) !important; }
 
 @media screen and (max-width: 479px) {
   .col-xs-1 {

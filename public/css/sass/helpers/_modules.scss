@@ -1,11 +1,11 @@
 //CONTENEUR h1 TOP PAGE 1
 .conteneur_h1{
-    background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 20px 20px;
     color: $white;
-    background-image: url(../img/logo.png);
+    background-image: url(../img/accueil/page-accueil.png);
     background-size: cover;
+    background-position:top;
     h1{
         text-transform: uppercase;
         font-family: $open;
@@ -47,6 +47,8 @@
 //CONTENEUR h1 TOP PAGE 2
 .conteneur_h1_2{
     background-image: url(../img/logo.png);
+    background-size: cover;
+    background-position: center;
     height: 175px;
         h1{
         text-transform: uppercase;
@@ -352,7 +354,7 @@ div.handler_hover:hover{
 
 //CONTENEUR_ESPACE_LICENSE
 .conteneur_espace_license{
-    margin:0 15%;
+    margin:0 7%;
     margin-bottom: 50px;
     .case_license{
         padding-top:40px;

@@ -40,32 +40,22 @@
     </div>
 
     <div class="col-12 conteneur_caroussel"> 
-    <div class="col-8 owl-carousel">
-            <div class="handler_hover">
-                    <h3>#Nomsévènements</h3>
+        <div class="col-8 owl-carousel">
+            {% for listeCompetitions in listeCompetitions %}
+            <div class="background-carroussel">
+            <div class="handler_hover" data-image="{{listeCompetitions.image}}">
+                    <h3>#Evenement</h3>
                     <div class="hover_slider">
-                        <p>quelle équipe</p>
+                        <p>{{ listeCompetitions.title }}</p>
                         <br/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar rhoncus lacus, vitae scelerisque nibh euismod id. Proin magna libero, vehicula eget iaculis quis, suscipit vestibulum dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        <p>{{ listeCompetitions.intro|raw }}</p>
+                        <br/>
+                        <p>{{ listeCompetitions.description|raw }}</p>
                     </div>
             </div>
-            <div class="handler_hover">
-                    <h3>#Nomsévènements</h3>
-                    <div class="hover_slider">
-                        <p>quelle équipe</p>
-                        <br/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar rhoncus lacus, vitae scelerisque nibh euismod id. Proin magna libero, vehicula eget iaculis quis, suscipit vestibulum dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    </div>
-            </div>
-            <div class="handler_hover">
-                    <h3>#Nomsévènements</h3>
-                    <div class="hover_slider">
-                        <p>quelle équipe</p>
-                        <br/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar rhoncus lacus, vitae scelerisque nibh euismod id. Proin magna libero, vehicula eget iaculis quis, suscipit vestibulum dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    </div>
-            </div>
-      </div>
+        </div>
+            {% endfor %}
+          </div>
     </div>
 
     <div class="col-12 conteneur_link">
@@ -80,5 +70,15 @@
     <!-- Javascript -->
     <script type="text/javascript">
         ScrollSmooth();
+
+            elements = document.querySelectorAll(".handler_hover");
+            //console.log(elements);
+            for (var i = 0; i < elements.length; i++) {
+                var image = $(elements[i]).attr("data-image");
+                console.log(image);
+                var a = "/img/competitions/"+image;
+                $(elements[i]).parent().css("background-image","url("+a+")");
+
+              }
     </script>
 {% endblock %}

@@ -26,8 +26,11 @@ use App\Repository\CompetitionsRepository;
 
 class DefaultController extends Controller {
     
-    public function index(){
-        return $this->render('default.html.twig');
+    public function index(CompetitionsRepository $CompetitionsRepository){
+        $listeCompetitions = $CompetitionsRepository->findAll();
+        return $this->render('default.html.twig', array(
+            'listeCompetitions' => $listeCompetitions
+        ));
     }
 
 //affiche une table entière

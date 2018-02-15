@@ -3,9 +3,13 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CompetitionsRepository")
+ * @Vich\Uploadable
+ * @ORM\Table(name="ffroller_competitions")
  */
 class Competitions
 {
@@ -19,15 +23,30 @@ class Competitions
         /**
         * @var string
         *
+        * @ORM\Column(type="string", length=255)
+        */
+        private $image;
+
+        /**
+         * @var File
+        *
+        * @Vich\UploadableField(mapping="competitions", fileNameProperty="image")
+        */
+        private $imageFile;
+
+        /**
+        * @var string
+        *
         * @ORM\Column(name="title", type="string", length=255, nullable=false, options={"comment":"Titre"})
         */
         private $title;
-    
+
         /**
          * @var string
          *
          * @ORM\Column(name="slug", type="string", length=255, nullable=false, options={"comment":"Lien formaté"})
          */
+
         private $slug;
     
         /**
@@ -43,6 +62,13 @@ class Competitions
          * @ORM\Column(name="description", type="text", nullable=false, options={"comment":"Contenu"})
          */
         private $description;
+
+        /**
+         * @var string
+         *
+         * @ORM\Column(name="intro", type="text", nullable=false, options={"comment":"intro"})
+         */
+        private $intro;
     
         /**
          * @var \DateTime
@@ -80,6 +106,34 @@ class Competitions
         public function getId()
         {
             return $this->id;
+        }
+
+        public function setImageFile(File $image = null)
+        {
+            $this->imageFile = $image;
+    
+            // VERY IMPORTANT:
+            // It is required that at least one field changes if you are using Doctrine,
+            // otherwise the event listeners won't be called and the file is lost
+            if ($image) {
+                // if 'updatedAt' is not defined in your entity, use another property
+                $this->updatedat = new \DateTime('now');
+            }
+        }
+    
+        public function getImageFile()
+        {
+            return $this->imageFile;
+        }
+    
+        public function setImage($image)
+        {
+            $this->image = $image;
+        }
+    
+        public function getImage()
+        {
+            return $this->image;
         }
 
         /**
@@ -129,6 +183,30 @@ class Competitions
             return $this->slug;
         }
     
+        /**
+         * Set intro
+         *
+         * @param string $intro
+         *
+         * @return Competitions
+         */
+        public function setIntro($intro)
+        {
+            $this->intro = $intro;
+    
+            return $this;
+        }
+    
+        /**
+         * Get intro
+         *
+         * @return string
+         */
+        public function getIntro()
+        {
+            return $this->intro;
+        }
+
         /**
          * Set status
          *
@@ -271,5 +349,9 @@ class Competitions
         public function getDate()
         {
                 return $this->date;
+        }
+        
+        public function __toString(){
+            return (string) $this->getTitle();
         }
 }

@@ -4,13 +4,35 @@ easy_admin:
             class: App\Entity\Category
         
         Champions:
-            class: App\Entity\Champions 
+            class: App\Entity\Champions
+            form:
+                fields:
+                - { property: 'title' }
+                - { property: 'slug' }
+                - { property: 'status' }
+                - { property: 'description' }
+                - { property: 'createdAt' }
+                - { property: 'updatedat' }
+                - { property: 'deletedat' }
+                - { property: 'imageFile', type: 'file'}
         
         Clubs:
             class: App\Entity\Clubs 
         
         Competitions:
-            class: App\Entity\Competitions 
+            class: App\Entity\Competitions
+            form:
+                fields:
+                - { property: 'title' }
+                - { property: 'slug' }
+                - { property: 'status' }
+                - { property: 'description' }
+                - { property: 'createdAt' }
+                - { property: 'updatedat' }
+                - { property: 'deletedat' }
+                - { property: 'date' }
+                - { property: 'imageFile', type: 'file'}
+                - { property: 'intro'}
         
         Articles: 
             class: App\Entity\Articles

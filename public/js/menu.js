@@ -10,12 +10,12 @@ window.onload = function(event){
         console.log('au dessus de 1293');
         }else if(largeurPage < 1293 ){
             if ( portraitOrientation.matches ) {
-                console.log('portrait');
+                //console.log('portrait');
                 $('.nav_mobile').css('height',hauteurPage);
                 $('.intro').css('height',hauteurPage);
             } else {
-                console.log('au dessous de 1293');
-                console.log('paysage');
+                //console.log('au dessous de 1293');
+                //console.log('paysage');
                 $('.nav_mobile').css('height',largeurPage);
                 $('.intro').css('height',hauteurPage);
             }
@@ -28,15 +28,15 @@ window.onresize = function(event) {
     var portraitOrientation = window.matchMedia("(orientation:portrait)");
     $('.intro').css('height',hauteurPage);
     if(largeurPage > 1293 ){
-        console.log('au dessus de 1293');
+        //console.log('au dessus de 1293');
         }else if(largeurPage < 1293 ){
             if ( portraitOrientation.matches ) {
-                console.log('portrait');
+                //console.log('portrait');
                 $('.nav_mobile').css('height',hauteurPage);
                 $('.intro').css('height',hauteurPage);
             } else {
-                console.log('au dessous de 1293');
-                console.log('paysage');
+                //console.log('au dessous de 1293');
+                //console.log('paysage');
                 $('.nav_mobile').css('height',largeurPage);
                 $('.intro').css('height',hauteurPage);
             }
@@ -50,14 +50,14 @@ function menuBurger(){
         var largeurPage = window.innerWidth;
         //$('.intro').hide();
         if(largeurPage > 1293 ){
-            console.log('au dessus de 1293');
+            //console.log('au dessus de 1293');
             }else if(largeurPage < 1293 ){
                 if ( portraitOrientation.matches ) {
-                    console.log('portrait');
+                    //console.log('portrait');
                     $('.nav_mobile').css('height',hauteurPage);
                 } else {
-                    console.log('au dessous de 1293');
-                    console.log('paysage');
+                    //console.log('au dessous de 1293');
+                    //console.log('paysage');
                     $('.nav_mobile').css('height',largeurPage);
                 }
         }

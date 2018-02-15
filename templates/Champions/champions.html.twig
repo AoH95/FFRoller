@@ -12,21 +12,23 @@
 {% block body %}
     <!-- Content Page -->
 
-    <div class="col-12 conteneur_h1"><h1>#Champions</h1><br/>
+    <div class="col-12 conteneur_h1 bg_champions"><h1>#Champions</h1><br/>
         <p>La Fédération vous accueille dans ses locaux du lundi au jeudi de 9h00 à 12h30 et de 13h30 à 17h30 et le vendredi de 9h00 à 12h30 et de 13h30 à 16h30.<br/> Le standard téléphonique est ouvert tous les matins de 9h00 à 12h30.</p>
     </div>
 
     <div class="col-12 conteneur_caroussel"> 
         <div class="col-8 owl-carousel">
-                {% for listeChampions in listeChampions %}
-            <div class="handler_hover">
-                    <h3>#Champions</h3>
+            {% for listeChampions in listeChampions %}
+            <div class="background-carroussel">
+            <div class="handler_hover" data-image="{{listeChampions.image}}">
+                    <h3>#Evenement</h3>
                     <div class="hover_slider">
-                        <p>{{listeChampions.title}}</p>
+                        <p>{{ listeChampions.title }}</p>
                         <br/>
-                        <p>{{listeChampions.description|raw}}</p>
+                        <p>{{ listeChampions.description|raw }}</p>
                     </div>
             </div>
+        </div>
             {% endfor %}
           </div>
     </div>
@@ -41,4 +43,15 @@
 
 {% block javascripts %}
     <!-- Javascript -->
+    <script type="text/javascript">
+
+            elements = document.querySelectorAll(".handler_hover");
+            //console.log(elements);
+            for (var i = 0; i < elements.length; i++) {
+                var image = $(elements[i]).attr("data-image");
+                console.log(image);
+                var a = "/img/champions/"+image;
+                $(elements[i]).parent().css("background-image","url("+a+")");
+              }
+    </script>
 {% endblock %}

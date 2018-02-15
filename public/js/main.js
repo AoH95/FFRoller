@@ -35,9 +35,9 @@ function Caroussel(){
 
 function ScrollSmooth(){
         var toHeight = document.getElementById("intro").offsetHeight;
-        console.log(toHeight);
+        //console.log(toHeight);
         $('.scrollTo').on('click',function(){
-            console.log('scroll fait');
+            //console.log('scroll fait');
             $('html,body').animate({
                 scrollTop:toHeight,
             }, 800, function(){
@@ -58,13 +58,13 @@ function FixMenu(){
 $(window).scroll(
     function() {
         var scroll = $(window).scrollTop();
-        console.log(scroll, positionElementInPage);
+        //console.log(scroll, positionElementInPage);
         if (scroll > positionElementInPage+100) {
             // fixed
             menu.addClass("fixed");
         }else if(scroll < positionElementInPage+100 || scroll == positionElementInPage+100){
             //unfixed
-            console.log('ololo');
+            //console.log('ololo');
             menu.removeClass("fixed");
         }        
 
