@@ -102,7 +102,6 @@ ul.deroulant {
   left: -999em;
   text-align: left;
   z-index: 1000;
-  margin-top: 10px;
   padding: 10px;
   background-color: #FFFFFF; }
 
@@ -288,7 +287,8 @@ footer div.conteneur_footer_nav {
   padding: 20px 20px;
   color: #000000;
   background-image: url(../img/hockey.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   .conteneur_h1_blanc h1 {
     text-transform: uppercase;
     font-family: "Open Sans Condensed", sans-serif;

@@ -7,7 +7,7 @@ window.onload = function(event){
     var portraitOrientation = window.matchMedia("(orientation:portrait)");
     $('.intro').css('height',hauteurPage);
     if(largeurPage > 1293 ){
-        console.log('au dessus de 1293');
+       //console.log('au dessus de 1293');
         }else if(largeurPage < 1293 ){
             if ( portraitOrientation.matches ) {
                 //console.log('portrait');

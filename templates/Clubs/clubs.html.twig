@@ -38,12 +38,6 @@
     </div>
 
     <div id="map"></div>
-<script>
-    var test = {{jsonObj|json_encode|raw}};
-        console.log(test);
-        //var clubs = $('[data-clubs]').data('clubs');
-        //console.log('clubs ' + clubs);
-</script>
 
 {% endblock %}
 
@@ -51,9 +45,47 @@
     <!-- Javascript -->
     <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAH_ZZ2yFCuljC35ZKTChvDBRS5ZS5Q_EQ&callback=initMap"
     async defer></script>
-    <script type="text/javascript" src="{{asset('js/map.js')}}"></script>
     <script>
-        initMap();
-    </script>
+            var map;
+        
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 6,
+                  center: new google.maps.LatLng(48.856614, 2.352222),
+                  mapTypeId: 'terrain'
+                });
+        
+                var markers = [
+        
+                    {% for listeClubs in listeClubs %}
+                    {
+                        name: '{{ listeClubs.title }}',
+                        address: '{{ listeClubs.description}}',
+                        lat: '{{ listeClubs.lattitude }}',
+                        lng: '{{ listeClubs.longitude }}',
+                    },
+                    {% endfor %}
+                    ]
+                    //console.log(markers);
+        
+                for (i=0;i<markers.length;i++){
+                    var Lat = parseInt(markers[i].lat);
+                    var Lng = parseInt(markers[i].lng);
+                    var LatLng = {lat: Lat, lng: Lng};
+                    //console.log(LatLng);
+                    var marker = new google.maps.Marker({
+                        position:LatLng,
+                        map: map,
+                        title: markers[i].name,
+                      }); 
+                  }
+
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+                
+              }
+                initMap();
+        </script>
 
 {% endblock %}
