@@ -39,12 +39,12 @@
 }
 /* Add some roundy-ness */
 .monthly-header-title a:first-of-type {
-	border-top-left-radius: 1em;
-	border-bottom-left-radius: 1em;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
 }
 .monthly-header-title a:last-of-type {
-	border-top-right-radius: 1em;
-	border-bottom-right-radius: 1em;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 }
 .monthly-header-title a:hover {
 	background: #8b8b8b;
@@ -59,7 +59,6 @@
 /* current month/yr block */
 .monthly-header-title-date,
 .monthly-header-title-date:hover {
-	background: #eee!important;
 	border: 1px solid #ccc!important;
 	color: #545454!important;
 	cursor: default;

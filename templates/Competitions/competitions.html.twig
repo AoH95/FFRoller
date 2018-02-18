@@ -15,15 +15,16 @@
     <div class="col-12 conteneur_h1 bg_competition">
             <div class="col-12 fond_black">
         <h1>#Compétitions</h1><br/>
-        <p>La Fédération vous accueille dans ses locaux du lundi au jeudi de 9h00 à 12h30 et de 13h30 à 17h30 et le vendredi de 9h00 à 12h30 et de 13h30 à 16h30.<br/> Le standard téléphonique est ouvert tous les matins de 9h00 à 12h30.</p>
+        <p>La saison sportive de la planète Roller est ponctuée de plusieurs événements tels que les championnats de France de Roller Hockey, de Rink Hockey, de patinage artistique, de roller freestyle ou encore de courses telles la Coupe de France des Marathons avec plusieurs étapes à travers la France de mars à octobre dont 2 étapes de Coupe du Monde. Plusieurs milliers de patineurs participent à ces événements parfois ouverts aux non licenciés.</p>
+            <br/>
+            <p>
+            Environ 200 athlètes composent les équipes de France de la FFRS, toutes disciplines confondues. Trop souvent oubliée par le grand public, la dimension compétitive du roller est belle et bien présente. La France fait partie des grandes nations au niveau international dans toutes ses disciplines.</p>
         </div>
     </div>
-    {% for listeCompetitions in listeCompetitions %}
-    <p>{{listeCompetitions.title}}</p>
-    {% endfor %}
-    
-    <div class="monthly" id="mycalendar"></div>
 
+    <div class="col-12">
+    <div class="monthly" id="mycalendar"></div>
+</div>
 <div class="col-12 conteneur_link">
     <a href="{{path('champions')}}"><p class="col-6"><span>#trouverunchampion</span></br>
         Découvrez tous les champions de la fédération !</p>

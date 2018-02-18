@@ -83,7 +83,7 @@ div.fond{
         top:80px;
         height: 175px;
         background-color: rgba(0, 0, 0, 0.7);
-        width: 24em;
+        width: 18em;
         left:-33px;
         -webkit-transform: skew(-20deg); 
         -moz-transform: skew(-20deg); 
@@ -246,6 +246,10 @@ div.fond{
                     }
                     a{
                         text-decoration: none;
+                        color:$light_black;
+                        &:hover{
+                            color:$yellow_flash;
+                        }
                     }
             }
         }
@@ -390,7 +394,6 @@ div.handler_hover:hover{
 }
 
 .logo_case{
-    background-image: url(../img/logo.png);
     width: 100px;
     height: 100px;
     background-size:cover;
@@ -399,9 +402,20 @@ div.handler_hover:hover{
     margin-bottom:10px;
 }
 
-//UTIL
-.head_page{
-    padding: 0px 4%;
+.case_1{
+    background-image: url(../img/picto/case1.png);
+}
+
+.case_2{
+    background-image: url(../img/picto/case2.png);
+}
+
+.case_3{
+    background-image: url(../img/picto/case3.png);
+}
+
+.case_4{
+    background-image: url(../img/picto/case4.png);
 }
 
 //MENTIONS
@@ -487,10 +501,33 @@ div.handler_hover:hover{
 //MOBILE
 
 @media screen and (max-width:479px){
+
+    .conteneur_espace_license{
+        margin:0;
+        margin-bottom: 20px;
+        padding:0 2%;
+        .case_license{
+            margin: 1% 0%;
+        }
+    }
+    .conteneur_h1 p{
+        padding:0;
+        margin: 0;
+    }
+    .conteneur_fed{
+        margin:0;
+    }
     .conteneur_h2{
         margin-top: 30px!important;
+        h2{
+            font-size:$title-xs;
+        }
     }
-
+    .conteneur_h1_blanc{
+        .fond_blanc{
+           margin:0!important;
+        }
+    }
     //FORMULAIRE
     .formulaire{
         width:100%;
@@ -500,26 +537,48 @@ div.handler_hover:hover{
         width: 100%;
         padding-right: 10px;
     }
+    .submit{
+        margin: 0 0 10px 0;
+    }
     //CAROUSSEL
 .owl-stage{
     .owl-item{
+        .handler_hover{
+            h3{
+                font-size: $title-xs!important;
+            }
+            .hover_slider{
+                min-height: 300px!important;
+            }
+        }
     }
 }
 
+.conteneur_link{
+    p{
+        margin-left: 2%;
+    }
+    .fleche_link{
+        margin-top: 60px;
+        width: 30px;
+        height: 17px;
+        margin-left:27px;
+    }
+}
 .conteneur_caroussel{
     margin-top:40px;
-    margin-bottom: -20px;
+    margin-bottom: 40px;
     .owl-nav{
         position:relative;
-        top: -110px;
+        top: -50%;
         .owl-next{
+            left: 6px;
             position:relative;
             width: 50px;
             height: 28px;
             background-size: cover;
             top: -28px;
             float: right;
-            background-color:green;
             background-image: url(../img/flech.png);
             -webkit-transform:rotate(-90deg);
             -ms-transform:rotate(-90deg);
@@ -528,11 +587,11 @@ div.handler_hover:hover{
             -moz-transform:rotate(-90deg);
         }
         .owl-prev{
+            left: -6px;
             position:relative;
             width: 50px;
             height: 28px;
             background-size: cover;
-            background-color:green;
             background-image: url(../img/flech.png);
             -webkit-transform:rotate(90deg);
             -ms-transform:rotate(90deg);
@@ -545,6 +604,18 @@ div.handler_hover:hover{
 
     .contact{
         padding: 0 2%!important;
+    }
+
+    .conteneur_fede_black .conteneur_fede_1 {
+        margin: 0 5%!important;
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+    }
+
+    .conteneur_fede_white .conteneur_fede_2 {
+        margin: 0 5%!important;
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
     }
 }
 

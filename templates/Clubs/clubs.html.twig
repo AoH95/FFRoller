@@ -13,18 +13,18 @@
     <!-- Content Page -->
     <div data-clubs="{{ listeClubs|json_encode }}"></div>
 
-    <div class="col-12 head_page">
+    <div class="col-8 head_page">
     <div class="col- conteneur_h2">
             <div class="yellow_bar"><h2>#Trouver votre club</h2></div>
     </div>
     </div>
     
-    <div class="conteneur_searchbar col-12">
-        <input class="col-11" type="search" placeholder="Paris" name="the_search">
+    <div class="conteneur_searchbar col-8">
+        <input class="col-12" type="search" placeholder="Paris" name="the_search">
         <i class="icone_search fa fa-search" aria-hidden="true"></i>
     </div>
 
-    <div class="col-12 conteneur_clubs_list">
+    <div class="col-8 conteneur_clubs_list">
     {% for listeClubs in listeClubs %}
         <div class="col-11 conteneur_club">
             <h3>{{listeClubs.title}}</h3><br/>

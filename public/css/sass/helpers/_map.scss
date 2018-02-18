@@ -7,3 +7,33 @@
 html, body {
     height: 100%;
   }
+
+  //RESPONSIVE
+@media screen and (max-width:1293px){
+}
+
+@media screen and (min-width:1294px){
+  
+}
+
+//MOBILE
+
+@media screen and (max-width:479px){
+
+}
+@media screen and (max-width:959px){
+}
+
+//TABLETTE
+@media screen and (min-width:480px) and (max-width:959px){
+  #map{
+    width: 70%;
+    height: 55%;
+  }
+}
+/*
+//MEDIUM SCREEN
+@media screen and (min-width:960px) and (max-width:1280px){}
+//DESKTOP
+@media screen and (max-width:1281px){}
+*/

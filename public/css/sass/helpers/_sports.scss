@@ -29,16 +29,20 @@
 
 @media screen and (max-width:479px){
     .conteneur_category{
-        margin-top: 5%;        
+        margin: 1% 0;
+        img{
+            margin-top:0px;
+        }        
         .bloc_category{
             height: 175px;
-            width:37%;
-            margin: 6% 6%;
+            width: 44%;
+            margin: 2% 3%;
             a{
                p{
                    font-size:$content;
                    span{
                        font-size:$content;
+                       font-size:$title-xs;
                    }
                } 
             }
@@ -53,9 +57,9 @@
             margin-top:5%;
         }
         .bloc_category{
-            height: 175px;
-            width: 30%;
-            margin: 10% 10%;
+            height: 223px;
+            width: 31%;
+            margin: 1% 1%;
         }
     }
 }

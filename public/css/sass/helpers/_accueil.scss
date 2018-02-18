@@ -48,6 +48,7 @@
     .bouton_ensv{
         margin-top:20px;
         background-color:$light_black;
+        border:1px solid $light_black;
         width: 200px;
         height: 45px;
         text-align: center;
@@ -58,7 +59,13 @@
         text-transform:uppercase;
         font-size:$btn;
         color:$white;
-
+        transition:0.3s;
+        &:hover{
+            background-color: $white;
+            > a{
+                color:$light_black;
+            }
+        }
     }
     .fleche_bas{
         position: absolute;

@@ -1,6 +1,6 @@
 .conteneur_article_list{
     padding:0 15%;
-    margin-top: 90px;
+    margin-top: 100px;
     .conteneur_article_preview{
         h2{
             color:$dark_black;
@@ -16,6 +16,12 @@
             font-family: $work;
             font-size:$content;
             margin-bottom:20px;
+            a{
+                color: $light_black;
+                &:hover{
+                    color:$yellow_flash;
+                }
+            }
         }
         margin-top:0px;
         margin-bottom: 20px;
@@ -42,7 +48,7 @@
 
 .conteneur_article{
     padding: 0 7%;
-    margin:3% 0;
+    margin: 3% 17%;
     span{
         color: $yellow_flash;
     }

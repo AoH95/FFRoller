@@ -117,6 +117,7 @@ header.mobile{
     
     .menu_nav_mobile{
         .nav_mobile{
+            
             z-index: 5000;
             position: fixed;
             left: 0%;
@@ -151,6 +152,12 @@ header.mobile{
         .menu_deroulant_mobile{
             text-align: center;
             list-style: none;
+            a{
+                color:$light_black!important;
+                &:hover{
+                    color:$yellow_flash!important;
+                }
+            }
                 .sportCatMenuTitle_mobile{
                 margin-top: 0px;
                 height: auto;
@@ -159,7 +166,6 @@ header.mobile{
         .fa-times{
             font-size: 40px;
             position: absolute;
-            right: 30px;
             top: 20px;
         }
     }
@@ -175,7 +181,13 @@ header.mobile{
 }
 
 .conteneur_rs_mobile{
-    margin-left: 15%;
+    margin-left: 13%;
+    ul li a{
+        color:$light_black!important;
+        &:hover{
+            color:$yellow_flash!important;
+        }
+    }
 
 }
 //RESPONSIVE
@@ -189,7 +201,17 @@ header.mobile{
 
 //MOBILE
 
-@media screen and (max-width:479px){}
+@media screen and (max-width:479px){
+    header.mobile .menu_nav_mobile .menu_deroulant_mobile{
+        margin-right: 20%;
+    }
+    .conteneur_rs_mobile{
+        margin: 0;
+    }
+    header.mobile .logo_mobile{
+        margin:0 23%!important;
+    }
+}
 @media screen and (max-width:959px){
     header.mobile{display:block;}
     header.desktop{display:none;}

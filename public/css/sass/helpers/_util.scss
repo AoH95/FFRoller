@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+    color: $white;
+    &:hover{
+        color:$yellow_flash;
+    }
+}
+
+input{
+    transition: 0.3s;
+    &:hover{
+        color:$light_black;
+        background-color:$white;
+    }
+}
