@@ -697,9 +697,6 @@ div.handler_hover:hover {
       list-style-type: none; }
 
 @media screen and (max-width: 479px) {
-  .conteneur_h1_2 h1 span {
-    display: none; }
-
   .conteneur_espace_license {
     margin: 0;
     margin-bottom: 20px;
