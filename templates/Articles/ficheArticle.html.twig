@@ -12,12 +12,12 @@
 
 {% block body %}
     <!-- Content Page -->
-    <div class="col-12 conteneur_h1_2">
+    <div class="col-12 conteneur_h1_2 bg_article">
         <h1>#{{listeArticles.id}} <br/><span>{{listeArticles.title}}</span></h1>
     </div>
     <div class="fond"></div>
 
-    <div class="col-8 conteneur_article">
+    <div class="col-8 col-xs-10 conteneur_article">
         <h2><span>#</span> {{listeArticles.title}}</h2>
         <p>{{listeArticles.description|raw}}</p>
         <br/>

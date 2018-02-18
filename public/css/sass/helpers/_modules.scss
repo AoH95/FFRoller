@@ -275,8 +275,8 @@ div.handler_hover:hover{
         top: -220px;
         .owl-next{
             position:relative;
-            width: 50px;
-            height: 27px;
+            width: 41px;
+            height: 24px;
             background-size: cover;
             top: -57px;
             float: right;
@@ -289,8 +289,8 @@ div.handler_hover:hover{
         }
         .owl-prev{
             position:relative;
-            width: 50px;
-            height: 27px;
+            width: 41px;
+            height: 24px;
             background-size: cover;
             background-image: url(../img/flech.png);
             -webkit-transform:rotate(90deg);
@@ -506,13 +506,16 @@ div.handler_hover:hover{
 //MOBILE
 
 @media screen and (max-width:479px){
+    .conteneur_h1_2 h1 span{
+        display: none;
+    }
 
     .conteneur_espace_license{
         margin:0;
         margin-bottom: 20px;
         padding:0 2%;
         .case_license{
-            margin: 1% 0%;
+            margin: 1% 4%;
         }
     }
     .conteneur_h1 p{
@@ -560,14 +563,15 @@ div.handler_hover:hover{
 }
 
 .conteneur_link{
+    padding:20px 11%;
     p{
-        margin-left: 2%;
+        width: 78%;
     }
     .fleche_link{
-        margin-top: 60px;
+        margin-top: 30px;
         width: 30px;
         height: 17px;
-        margin-left:27px;
+        margin-left: 14px;
     }
 }
 .conteneur_caroussel{
@@ -626,9 +630,15 @@ div.handler_hover:hover{
 
 //TABLETTE
 @media screen and (min-width:480px) and (max-width:959px){
+    .conteneur_h1 p{
+        margin: 0!important;   
+    }
     .conteneur_espace_license{
-        margin:0 11%;
+        margin:1% 0%;
         margin-bottom: 20px;
+        .case_license{
+            margin:1% 4%;
+        }
     }
     .owl-stage .owl-item div.handler_hover 
     {

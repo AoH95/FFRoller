@@ -85,6 +85,9 @@ button.submit{
 //MOBILE
 
 @media screen and (max-width:479px){
+    .conteneur_article{
+        margin: 3% 0%;
+    }
     .img_article_prev{
         img{
             display: none;
@@ -94,6 +97,9 @@ button.submit{
 
 //TABLETTE
 @media screen and (min-width:480px) and (max-width:959px){
+    .conteneur_article{
+        margin: 3% 0%;
+    }
 }
 /*
 //MEDIUM SCREEN

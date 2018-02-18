@@ -202,15 +202,6 @@ header.mobile{
 //MOBILE
 
 @media screen and (max-width:479px){
-    header.mobile .menu_nav_mobile .menu_deroulant_mobile{
-        margin-right: 20%;
-    }
-    .conteneur_rs_mobile{
-        margin: 0;
-    }
-    header.mobile .logo_mobile{
-        margin:0 23%!important;
-    }
 }
 @media screen and (max-width:959px){
     header.mobile{display:block;}

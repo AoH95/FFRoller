@@ -192,15 +192,6 @@ header.mobile {
 @media screen and (max-width: 1293px) {
   .nav_mobile {
     display: none; } }
-@media screen and (max-width: 479px) {
-  header.mobile .menu_nav_mobile .menu_deroulant_mobile {
-    margin-right: 20%; }
-
-  .conteneur_rs_mobile {
-    margin: 0; }
-
-  header.mobile .logo_mobile {
-    margin: 0 23% !important; } }
 @media screen and (max-width: 959px) {
   header.mobile {
     display: block; }
@@ -529,8 +520,8 @@ div.handler_hover:hover {
     top: -220px; }
     .conteneur_caroussel .owl-nav .owl-next {
       position: relative;
-      width: 50px;
-      height: 27px;
+      width: 41px;
+      height: 24px;
       background-size: cover;
       top: -57px;
       float: right;
@@ -542,8 +533,8 @@ div.handler_hover:hover {
       -moz-transform: rotate(-90deg); }
     .conteneur_caroussel .owl-nav .owl-prev {
       position: relative;
-      width: 50px;
-      height: 27px;
+      width: 41px;
+      height: 24px;
       background-size: cover;
       background-image: url(../img/flech.png);
       -webkit-transform: rotate(90deg);
@@ -706,12 +697,15 @@ div.handler_hover:hover {
       list-style-type: none; }
 
 @media screen and (max-width: 479px) {
+  .conteneur_h1_2 h1 span {
+    display: none; }
+
   .conteneur_espace_license {
     margin: 0;
     margin-bottom: 20px;
     padding: 0 2%; }
     .conteneur_espace_license .case_license {
-      margin: 1% 0%; }
+      margin: 1% 4%; }
 
   .conteneur_h1 p {
     padding: 0;
@@ -744,13 +738,15 @@ div.handler_hover:hover {
   .owl-stage .owl-item .handler_hover .hover_slider {
     min-height: 300px !important; }
 
-  .conteneur_link p {
-    margin-left: 2%; }
-  .conteneur_link .fleche_link {
-    margin-top: 60px;
-    width: 30px;
-    height: 17px;
-    margin-left: 27px; }
+  .conteneur_link {
+    padding: 20px 11%; }
+    .conteneur_link p {
+      width: 78%; }
+    .conteneur_link .fleche_link {
+      margin-top: 30px;
+      width: 30px;
+      height: 17px;
+      margin-left: 14px; }
 
   .conteneur_caroussel {
     margin-top: 40px;
@@ -798,9 +794,14 @@ div.handler_hover:hover {
     padding-top: 10px !important;
     padding-bottom: 10px !important; } }
 @media screen and (min-width: 480px) and (max-width: 959px) {
+  .conteneur_h1 p {
+    margin: 0 !important; }
+
   .conteneur_espace_license {
-    margin: 0 11%;
+    margin: 1% 0%;
     margin-bottom: 20px; }
+    .conteneur_espace_license .case_license {
+      margin: 1% 4%; }
 
   .owl-stage .owl-item div.handler_hover {
     margin: 0 5%; }
@@ -1075,8 +1076,14 @@ button.submit {
   margin-bottom: 30px; }
 
 @media screen and (max-width: 479px) {
+  .conteneur_article {
+    margin: 3% 0%; }
+
   .img_article_prev img {
     display: none; } }
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  .conteneur_article {
+    margin: 3% 0%; } }
 /*
 //MEDIUM SCREEN
 @media screen and (min-width:960px) and (max-width:1280px){}
