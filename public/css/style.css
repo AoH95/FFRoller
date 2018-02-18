@@ -595,8 +595,8 @@ div.fond {
       .owl-stage .owl-item div.handler_hover:hover > .hover_slider {
         transition: 0.3s;
         display: block;
-        min-height: 280px;
-        padding: 2% 4%; }
+        padding: 2% 4%;
+        min-height: 225px; }
     .owl-stage .owl-item div.handler_hover h3 {
       padding: 3%;
       font-size: 32px;
