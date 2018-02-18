@@ -529,8 +529,8 @@ div.handler_hover:hover {
     top: -220px; }
     .conteneur_caroussel .owl-nav .owl-next {
       position: relative;
-      width: 100px;
-      height: 57px;
+      width: 50px;
+      height: 27px;
       background-size: cover;
       top: -57px;
       float: right;
@@ -542,8 +542,8 @@ div.handler_hover:hover {
       -moz-transform: rotate(-90deg); }
     .conteneur_caroussel .owl-nav .owl-prev {
       position: relative;
-      width: 100px;
-      height: 57px;
+      width: 50px;
+      height: 27px;
       background-size: cover;
       background-image: url(../img/flech.png);
       -webkit-transform: rotate(90deg);

@@ -25,6 +25,7 @@ function Caroussel(){
             },
             1293:{
                 items:3,
+                nav:true,
                 margin:120,
                 stagePadding:70,
             }
