@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %} 
-{% block title %} Titre de ma page {% endblock %}
+{% block title %}{{listeSports.title}}{% endblock %}
 
 {% block meta %}
     <!-- Meta Page -->
@@ -44,7 +44,7 @@
                     <div class="hover_slider">
                         <p>{{ listeArticles.title }}</p>
                         <br/>
-                        <p>{{ listeArticles.description|slice(0, 200)|raw}}...<br/> <a href="{{path('ficheArticle', {'slug':listeArticles.slug} )}}">En savoir + </a></p>
+                        <p>{{ listeArticles.description|slice(0, 200)|raw}}...<br/> <a href="{{path('ficheArticle', {'slug':listeArticles.slug} )}}"><u>En savoir +</u> </a></p>
                     </div>
             </div>
         </div>

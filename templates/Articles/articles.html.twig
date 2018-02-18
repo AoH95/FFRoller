@@ -1,8 +1,9 @@
 {% extends 'base.html.twig' %}
-{% block title %} Titre de ma page {% endblock %}
+{% block title %}Actualités{% endblock %}
 
 {% block meta %}
     <!-- Meta Page -->
+    <meta name="description" content="listes des actualités sur le monde de la fédération française de roller sport" />
 {% endblock %}
 
 {% block stylesheets %}
@@ -26,7 +27,7 @@
                 {{listeArticles.description|slice(0, 200)|raw}}... <a href="{{path('ficheArticle', {'slug':listeArticles.slug} )}}"><u>En savoir +</u> </a>
                 {% endautoescape %}
             </p>
-            <div class="img_article_prev"><img src="{{asset('img/articles/')}}{{listeArticles.image}}"></div>
+            <div class="img_article_prev"><img src="{{asset('img/articles/')}}{{listeArticles.image}}" alt="image-"{{listeArticles.image}}"" title="{{listeArticles.image}}""></div>
         <br/>
         <p><i>le {{listeArticles.createdAt|date('d-m-Y') }} par {{listeArticles.author}}</i></p>
         <br/><div class="col-6 sep-black"></div><br/>

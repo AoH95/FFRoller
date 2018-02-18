@@ -1,9 +1,10 @@
 {% extends 'base.html.twig' %} 
 
-{% block title %} Titre de ma page {% endblock %}
+{% block title %}{{listeArticles.title}}{% endblock %}
 
 {% block meta %}
     <!-- Meta Page -->
+    <meta name="description" content="News FFRoller"/>
 {% endblock %}
 
 {% block stylesheets %}
@@ -23,7 +24,7 @@
         <br/>
         <p><i>le {{listeArticles.createdAt|date('d-m-Y') }} par {{listeArticles.author}}</i></p>
         <br/>
-        <div class="img_article_prev"><img src="{{asset('img/articles/')}}{{listeArticles.image}}"></div>
+        <div class="img_article_prev"><img src="{{asset('img/articles/')}}{{listeArticles.image}}" alt="image-"{{listeArticles.image}}"" title="{{listeArticles.image}}""></div>
     </div>
 
     <a href="{{path('article')}}"><button class="submit">Toutes les actualités</button></a>        

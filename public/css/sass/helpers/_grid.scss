@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    //scroll-behavior: smooth;
+
+}
+
+[class^="col-"]{
+    float: left;
+}
+
+@for $i from 1 through 12 {
+ 
+    .col-#{$i} { 
+        width: 100% / 12 * $i;
+    }
+}
+
+.col-auto{
+    float: right;
+}
+
+@media screen and (max-width:1293px){
+    
+}
+
+@media screen and (min-width:1294px){
+   
+}
+
+//MOBILE
+
+@media screen and (max-width:479px){
+    @for $i from 1 through 12 {
+        .col-xs-#{$i} { 
+            width: 100% / 12 * $i;
+        }
+    }
+}
+//TABLETTE
+@media screen and (min-width:480px) and (max-width:959px){
+    @for $i from 1 through 12 {
+        .col-xs-#{$i} { 
+            width: 100% / 12 * $i;
+        }
+    }
+}
+/*
+//MEDIUM SCREEN
+@media screen and (min-width:960px) and (max-width:1280px){}
+//DESKTOP
+@media screen and (max-width:1281px){}
+*/

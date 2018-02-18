@@ -1,8 +1,9 @@
 {% extends 'base.html.twig' %}
-{% block title %} Titre de ma page {% endblock %}
+{% block title %}Catégorie des sports{% endblock %}
 
 {% block meta %}
     <!-- Meta Page -->
+    <meta name="description" content="Liste des disciplines de la FFRoller"/>
 {% endblock %}
 
 {% block stylesheets %}
@@ -21,7 +22,7 @@
         {% set listeSportsTitle = listeSports.title|split(' ') %}
        <div class="col-2 bloc_category" data-image="{{listeSports.image}}">
            <center>
-           <img src="../img/picto/{{img}}.png">
+           <img src="../img/picto/{{img}}.png" alt="icone-"{{listeSports.tile}}"" alt="image-"{{listeSports.image}}"" title="{{listeSports.image}}"">
             </center>
            <a href="{{path('ficheSport', {'slug':listeSports.slug} )}}">
                <p>{{listeSportsTitle[0]}}
