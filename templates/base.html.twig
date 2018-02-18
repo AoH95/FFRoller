@@ -48,24 +48,24 @@
             <div class="col-10 menu_nav">
                 <nav>
                     <ul class="menu_deroulant font_menu">
-                        <li><a href="{{path('index')}}">Fédération</a> <span>|</span></li>    
-                        <li class="sportCatMenuTitle"><a href="{{path('sport')}}">Sports</a>  <span>|</span>
+                        <li><a class="link" href="{{path('index')}}">Fédération</a> <span>|</span></li>    
+                        <li class="sportCatMenuTitle"><a class="link" href="{{path('sport')}}">Sports</a>  <span>|</span>
                             <!-- liste menu deroulant -->
                             <ul class="deroulant sportCatMenuTitle">
-                                <li class="sports"><a href="{{path('sport')}}/patinage-artistique">Patinage Artistique</a></li>
-                                <li class="sports"><a href="{{path('sport')}}/roller-course">Roller Course</a></li>
-                                <li class="sports"><a href="{{path('sport')}}/roller-derby">Roller Derby</a></li>
-                                <li class="sports"><a href="{{path('sport')}}/roller-freestyle">Roller Freestyle</a></li>
-                                <li class="sports"><a href="{{path('sport')}}/roller-randonnee">Roller Randonnée</a></li>
-                                <li class="sports"><a href="{{path('sport')}}/rink-hockey">Rink Hockey</a></li>
-                                <li class="sports"><a href="{{path('sport')}}/roller-hockey">Roller Hockey</a></li>
-                                <li class="sports"><a href="{{path('sport')}}/skateboard">Skateboard</a></li>
+                                <li class="sports"><a class="link" href="{{path('sport')}}/patinage-artistique">Patinage Artistique</a></li>
+                                <li class="sports"><a class="link" href="{{path('sport')}}/roller-course">Roller Course</a></li>
+                                <li class="sports"><a class="link" href="{{path('sport')}}/roller-derby">Roller Derby</a></li>
+                                <li class="sports"><a class="link" href="{{path('sport')}}/roller-freestyle">Roller Freestyle</a></li>
+                                <li class="sports"><a class="link" href="{{path('sport')}}/roller-randonnee">Roller Randonnée</a></li>
+                                <li class="sports"><a class="link" href="{{path('sport')}}/rink-hockey">Rink Hockey</a></li>
+                                <li class="sports"><a class="link" href="{{path('sport')}}/roller-hockey">Roller Hockey</a></li>
+                                <li class="sports"><a class="link" href="{{path('sport')}}/skateboard">Skateboard</a></li>
                             </ul>
                             <!-- fin liste menu deroulant -->
                         </li>
-                        <li><a href="{{path('competitions')}}">Compétitions & Résultats</a>  <span>|</span></li>
-                        <li><a href="{{path('espaceClub')}}">Espace Club & Licencié</a>  <span>|</span></li>
-                        <li><a href="{{path('contact')}}">Contact</a></li>
+                        <li><a class="link" href="{{path('competitions')}}">Compétitions & Résultats</a>  <span>|</span></li>
+                        <li><a class="link" href="{{path('espaceClub')}}">Espace Club & Licencié</a>  <span>|</span></li>
+                        <li><a class="link" href="{{path('contact')}}">Contact</a><span class="last">|</span></li>
                     </ul>
                 </nav>
             </div>
@@ -201,9 +201,9 @@
         
         <div class="col-9 nav_footer">
             <ul>
-                <li><a href="">Nous rejoindre</a>|</li>
+                <li><a href="{{path('contact')}}">Nous rejoindre</a>|</li>
                 <li><a href="">Plan du site</a>|</li>
-                <li><a href="">Mentions légales</a>|</li>
+                <li><a href="{{path('mentions')}}">Mentions légales</a>|</li>
                 <li><a href="{{path('article')}}">Archives</a></li>
             </ul>
             <br/>

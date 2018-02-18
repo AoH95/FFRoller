@@ -39,3 +39,7 @@ contact:
 champions:
     path: /champions
     defaults : {_controller : 'App\Controller\DefaultController::champions'}
+
+mentions:
+    path: /mentions
+    defaults : {_controller : 'App\Controller\DefaultController::mentions'}

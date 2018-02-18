@@ -24,7 +24,7 @@ header{
         div.logo_image{
             height: 60px;
             max-height: 60px;
-            max-width: 105px;
+            max-width: 138px;
             margin:8px 0 0 30px;
             background-image: url(../img/logo.png);
             background-size: cover;
@@ -49,6 +49,7 @@ div.menu_nav{
                     a{
                         text-decoration: none;
                         color: $dark_black;
+                        float: left;
                     }
                 }
             }
@@ -80,6 +81,22 @@ ul.deroulant{
     display: inherit;
 }
 
+.link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:$yellow_flash;
+    transition: width .3s;
+    float: left;
+}
+.link:hover::after{
+    width: 100%;
+}
+
+.last{
+    visibility: hidden; 
+}
 //TABLETTE & MOBILE
 
 header.mobile{

@@ -44,7 +44,7 @@
                     <div class="hover_slider">
                         <p>{{ listeArticles.title }}</p>
                         <br/>
-                        <p>{{ listeArticles.description|raw }}</p>
+                        <p>{{ listeArticles.description|slice(0, 200)|raw}}...<br/> <a href="{{path('ficheArticle', {'slug':listeArticles.slug} )}}">En savoir + </a></p>
                     </div>
             </div>
         </div>

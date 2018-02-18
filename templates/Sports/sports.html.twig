@@ -17,12 +17,11 @@
     <div class="fond"></div>
     <div class="col-12 conteneur_category">
     {% for listeSports in listeSports %} 
-        {% set img = 1 %}
-        {% set img = img + 1 %}
+        {% set img = loop.index + 1 %}
         {% set listeSportsTitle = listeSports.title|split(' ') %}
-       <div class="col-2 bloc_category">
+       <div class="col-2 bloc_category" data-image="{{listeSports.image}}">
            <center>
-           <img src="../img/{{img}}.png">
+           <img src="../img/picto/{{img}}.png">
             </center>
            <a href="{{path('ficheSport', {'slug':listeSports.slug} )}}">
                <p>{{listeSportsTitle[0]}}
@@ -38,4 +37,16 @@
 
 {% block javascripts %}
     <!-- Javascript -->
+    <script type="text/javascript">
+
+          $(".bloc_category").hover(
+            function(){
+            var image = $(this).attr("data-image");
+            var a = "/img/category/"+image;
+            $(this).css("background-image","url("+a+")");
+        },function(){
+            $(this).css("background-image","");
+        }
+        );
+</script>
 {% endblock %}

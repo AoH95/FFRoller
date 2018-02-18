@@ -48,9 +48,10 @@
                     <div class="hover_slider">
                         <p>{{ listeCompetitions.title }}</p>
                         <br/>
-                        <p>{{ listeCompetitions.intro|raw }}</p>
+                        <p>{{ listeCompetitions.intro|raw}}</p>
                         <br/>
-                        <p>{{ listeCompetitions.description|raw }}</p>
+                        <p>{{ listeCompetitions.description|slice(0, 200)|raw}}... <br/><a href="{{path('competitions')}}">En savoir + </a></p>
+                        
                     </div>
             </div>
         </div>
