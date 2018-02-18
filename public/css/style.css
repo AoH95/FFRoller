@@ -408,6 +408,7 @@ div.fond {
   .conteneur_category .bloc_category:nth-child(2n) {
     background-color: #3A3A3B; }
   .conteneur_category .bloc_category {
+    background-size: cover;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
     -o-transition: all 500ms;

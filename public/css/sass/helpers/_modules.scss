@@ -157,6 +157,8 @@ div.fond{
             background-color:$light_black;
         }
         .bloc_category{
+            background-size: cover;
+
             -webkit-transition: all 500ms;
             -moz-transition: all 500ms;
             -o-transition: all 500ms;
