@@ -30,7 +30,7 @@
     text-align: center;
     padding: 20px 20px;
     color: $dark_black;
-    background-image: url(../img/hockey.jpg);
+    background-image: url(../img/util/page-contact.png);
     background-size: cover;
     background-position:center;
     h1{
@@ -147,6 +147,11 @@ div.fond{
         height: 26px;   
         margin-top: 22px;
         margin-left: 20px;
+        &:hover{
+           >span{
+               color: white;
+           }
+        }
     }
 }
 
@@ -338,7 +343,7 @@ div.handler_hover:hover{
 .formulaire{
     margin-top: 10px;
     clear: left;
-    margin: 0 17%;
+    margin: 20px 17%;
     select, input:not(.submit), textarea{
         border:1px solid $light_grey;
         width: 95%;
@@ -625,6 +630,13 @@ div.handler_hover:hover{
         margin:0 11%;
         margin-bottom: 20px;
     }
+    .owl-stage .owl-item div.handler_hover 
+    {
+        margin : 0 5%;
+        div.hover_slider{
+        min-height: 285px!important;
+    }
+}
 }
 /*
 //MEDIUM SCREEN

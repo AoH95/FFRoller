@@ -335,7 +335,7 @@ footer div.conteneur_footer_nav {
   text-align: center;
   padding: 20px 20px;
   color: #000000;
-  background-image: url(../img/hockey.jpg);
+  background-image: url(../img/util/page-contact.png);
   background-size: cover;
   background-position: center; }
   .conteneur_h1_blanc h1 {
@@ -433,6 +433,8 @@ div.fond {
     height: 26px;
     margin-top: 22px;
     margin-left: 20px; }
+    .conteneur_link .fleche_link:hover > span {
+      color: white; }
 
 .conteneur_category {
   background-color: #FFFFFF;
@@ -583,7 +585,7 @@ div.handler_hover:hover {
 .formulaire {
   margin-top: 10px;
   clear: left;
-  margin: 0 17%; }
+  margin: 20px 17%; }
   .formulaire select, .formulaire input:not(.submit), .formulaire textarea {
     border: 1px solid #DFDFDF;
     width: 95%;
@@ -798,13 +800,21 @@ div.handler_hover:hover {
 @media screen and (min-width: 480px) and (max-width: 959px) {
   .conteneur_espace_license {
     margin: 0 11%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .owl-stage .owl-item div.handler_hover {
+    margin: 0 5%; }
+    .owl-stage .owl-item div.handler_hover div.hover_slider {
+      min-height: 285px !important; } }
 /*
 //MEDIUM SCREEN
 @media screen and (min-width:960px) and (max-width:1280px){}
 //DESKTOP
 @media screen and (max-width:1281px){}
 */
+.bg_contact {
+  background-image: url(../img/util/page-contact.png); }
+
 .conteneur_adresse {
   background-color: #DFDFDF;
   text-align: center;
@@ -856,6 +866,29 @@ div.handler_hover:hover {
     transform: translateY(-30px); }
   60% {
     transform: translateY(-15px); } }
+/*
+@-webkit-keyframes bounceVertical {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateX(0);} 
+    40% {-webkit-transform: translateX(-30px);}
+    60% {-webkit-transform: translateX(-15px);}
+   }
+    
+   @-moz-keyframes bounceVertical {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateX(0);}
+    40% {-moz-transform: translateX(-30px);}
+    60% {-moz-transform: translateX(-15px);}
+   }
+
+   @-o-keyframes bounceVertical {
+    0%, 20%, 50%, 80%, 100% {-o-transform: translateX(0);}
+    40% {-o-transform: translateX(-30px);}
+    60% {-o-transform: translateX(-15px);}
+   }
+   @keyframes bounceVertical {
+    0%, 20%, 50%, 80%, 100% {transform: translateX(0);}
+    40% {transform: translateX(-30px);}
+    60% {transform: translateX(-15px);}
+   }*/
 .intro {
   background-image: url(../img/skate_intro.jpg);
   background-repeat: no-repeat;
@@ -970,7 +1003,7 @@ div.handler_hover:hover {
 */
 #map {
   height: 80%;
-  width: 93%;
+  width: 94%;
   margin: 3% 3%; }
 
 html, body {
@@ -986,6 +1019,9 @@ html, body {
 //DESKTOP
 @media screen and (max-width:1281px){}
 */
+.bg_article {
+  background-image: url(../img/articles/page-actualite.png); }
+
 .conteneur_article_list {
   padding: 0 15%;
   margin-top: 100px; }
@@ -1047,6 +1083,9 @@ button.submit {
 //DESKTOP
 @media screen and (max-width:1281px){}
 */
+.bg_espaceClub {
+  background-image: url(../img/util/page-espaceclub.png); }
+
 .head_page {
   margin: 0 17%;
   padding: 0px 4%; }
@@ -1063,7 +1102,7 @@ button.submit {
   .conteneur_searchbar i {
     position: relative;
     top: -30px;
-    right: -93%;
+    right: -96%;
     cursor: pointer; }
 
 .conteneur_clubs_list {
@@ -1121,7 +1160,7 @@ button.submit {
     margin-top: 8.5%; }
 
 .bg_champions {
-  background-image: url(../img/category/page-categorie.png);
+  background-image: url(../img/champions/page-champions.png);
   background-color: rgba(0, 0, 0, 0.7) !important; }
 
 a {

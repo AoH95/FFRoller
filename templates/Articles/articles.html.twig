@@ -11,7 +11,7 @@
 
 {% block body %}
     <!-- Content Page -->
-    <div class="col-12 conteneur_h1_2">
+    <div class="col-12 conteneur_h1_2 bg_article">
         <h1>Toutes les<br/><span>actualités</span></h1>
     </div>
 <div class="fond"></div>
@@ -23,7 +23,7 @@
             <h2><span>#</span>{{listeArticles.title}}</h2>
             <p>
                 {% autoescape %}
-                {{listeArticles.description|slice(0, 200)|raw}}... <a href="{{path('ficheArticle', {'slug':listeArticles.slug} )}}">En savoir + </a>
+                {{listeArticles.description|slice(0, 200)|raw}}... <a href="{{path('ficheArticle', {'slug':listeArticles.slug} )}}"><u>En savoir +</u> </a>
                 {% endautoescape %}
             </p>
             <div class="img_article_prev"><img src="{{asset('img/articles/')}}{{listeArticles.image}}"></div>
