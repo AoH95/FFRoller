@@ -22,7 +22,7 @@
         {% set listeSportsTitle = listeSports.title|split(' ') %}
        <div class="col-2 bloc_category" data-image="{{listeSports.image}}">
            <center>
-           <img src="../img/picto/{{img}}.png" alt="icone-"{{listeSports.tile}}"" alt="image-"{{listeSports.image}}"" title="{{listeSports.image}}"">
+           <img src="../img/picto/{{img}}.png" alt="icone-{{listeSports.title}}" title="{{listeSports.image}}">
             </center>
            <a href="{{path('ficheSport', {'slug':listeSports.slug} )}}">
                <p>{{listeSportsTitle[0]}}
