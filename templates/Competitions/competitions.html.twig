@@ -12,8 +12,11 @@
 
 {% block body %}
     <!-- Content Page -->
-    <div class="col-12 conteneur_h1 bg_competition"><h1>#Compétitions</h1><br/>
+    <div class="col-12 conteneur_h1 bg_competition">
+            <div class="col-12 fond_black">
+        <h1>#Compétitions</h1><br/>
         <p>La Fédération vous accueille dans ses locaux du lundi au jeudi de 9h00 à 12h30 et de 13h30 à 17h30 et le vendredi de 9h00 à 12h30 et de 13h30 à 16h30.<br/> Le standard téléphonique est ouvert tous les matins de 9h00 à 12h30.</p>
+        </div>
     </div>
     {% for listeCompetitions in listeCompetitions %}
     <p>{{listeCompetitions.title}}</p>
@@ -33,7 +36,7 @@
 {% block javascripts %}
 <!-- Javascript -->
     <script type="text/javascript" src="{{asset('plugin/calendar/js/monthly.js')}}"></script>
-    
+
     <script type="text/javascript">
         $(window).load( function() {
             $('#mycalendar').monthly();

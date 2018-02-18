@@ -100,6 +100,10 @@ class DefaultController extends Controller {
         return $this->render('Util/mentions.html.twig');
     }
 
+    public function federation(){
+        return $this->render('Util/federation.html.twig');
+    }
+
 
 //Fonction pour afficher la fiche d'un sport
     public function ficheSport(CategoryRepository $CategoryRepository, ArticleRepository $ArticleRepository, $slug){

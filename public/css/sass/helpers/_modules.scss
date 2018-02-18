@@ -1,7 +1,6 @@
 //CONTENEUR h1 TOP PAGE 1
 .conteneur_h1{
     text-align: center;
-    padding: 20px 20px;
     color: $white;
     background-image: url(../img/accueil/page-accueil.png);
     background-size: cover;
@@ -20,11 +19,14 @@
         line-height: 1.5;
         padding: 0 6%;
     }
+    .fond_black{
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px 20px;
+    }
 }
 
 //CONTENEUR h1 TOP PAGE 1 blanc
 .conteneur_h1_blanc{
-    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 20px 20px;
     color: $dark_black;
@@ -42,6 +44,9 @@
         font-family: $work;
         font-weight: $work_reg;
         font-size: $content;
+    }
+    .fond_blanc{
+        background-color: rgba(255, 255, 255, 0.7)
     }
 }
 
@@ -414,6 +419,57 @@ div.handler_hover:hover{
     }
 }
 
+//CONTENEUR FEDE
+.conteneur_fede_black{
+    background-color: $light_black;
+    .conteneur_fede_1{
+        margin:0 17%;
+        padding-top: 20px;
+        padding-bottom:20px;
+        p, ul li{
+            color:$white;
+            font-family: $work;
+            font-size: $content;
+            list-style-type: none;
+        }
+        h3{
+            color:white;
+            font-family: $open;
+            font-size: $title;
+            text-transform: uppercase;
+            span{
+                font-family: $open;
+                color: $yellow_flash;
+                font-weight: $open_bold;
+            }
+        }
+    }
+}
+.conteneur_fede_white{
+    background-color: $white;
+.conteneur_fede_2{
+    margin:0 17%;
+    padding-top: 20px;
+    padding-bottom:20px;
+    h3{
+        color:$light_black;
+        font-family: $open;
+        font-size: $title;
+        text-transform: uppercase;
+    }
+    .yellow_bar{
+        width:175px;
+        top:-20px;
+        margin-top: -13px;
+    }
+    p, ul li{
+        color:$light_black;
+        font-family: $work;
+        font-size: $content;
+        list-style-type: none;
+    }   
+}
+}
 //RESPONSIVE
 
 //NAV MENU
@@ -489,7 +545,6 @@ div.handler_hover:hover{
         padding: 0 2%!important;
     }
 }
-
 
 //TABLETTE
 @media screen and (min-width:480px) and (max-width:959px){

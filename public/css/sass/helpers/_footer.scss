@@ -55,6 +55,7 @@ footer{
             font-size:16px;
             color:$white;
             text-align: right;
+            padding-right: 30px;
             ul{
                 padding-top: 15px;
                 li{
@@ -96,6 +97,9 @@ footer{
         .nav_footer{
             font-size:12px!important;
             padding-right: 10px;
+            .copyright{
+                font-size:12px!important;
+            }
             ul{
                 padding-top: 15px!important;
             }

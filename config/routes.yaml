@@ -43,3 +43,7 @@ champions:
 mentions:
     path: /mentions
     defaults : {_controller : 'App\Controller\DefaultController::mentions'}
+
+federation:
+    path: /federation
+    defaults : {_controller : 'App\Controller\DefaultController::federation'}
