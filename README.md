@@ -23,7 +23,7 @@ la commande pour lancer est :
 
 # Build With #
 
-Symfony version 4.0<br/>
+Symfony v4.0<br/>
 SASS<br/>
 JS<br/>
 JQuery<br/>
