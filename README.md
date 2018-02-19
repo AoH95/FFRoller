@@ -13,7 +13,7 @@ In case of panic :
 
 Note : En dehors des requirements basique de symfony3 il faut veiller à bien être en php7 + la ligne de commande est 
 
-`php -S 127.0.0.1:8000 -t public()'
+`php -S 127.0.0.1:8000 -t public()`
 
 
 
