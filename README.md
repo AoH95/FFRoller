@@ -15,22 +15,24 @@ In case of panic :
 
 Note : 
 
-En dehors des requirements basique de symfony3 il faut veiller à bien être en php7 + la commande pour lancer est :
+En dehors des prérequis basique de symfony3 il faut veiller à bien être en php7 
+
+la commande pour lancer est :
 
 `php -S 127.0.0.1:8000 -t public`
 
 # Build With #
 
-Symfony version 4.0
-SASS
-JS
-JQuery
+Symfony version 4.0<br/>
+SASS<br/>
+JS<br/>
+JQuery<br/>
 
-Plugin & Framework : 
+Plugin & Framework :<br/>
 
-EasyAdmin
-OwlCarousel
-Monthly
+EasyAdmin<br/>
+OwlCarousel<br/>
+Monthly<br/>
 
 # Author #
 
