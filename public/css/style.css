@@ -874,7 +874,8 @@ div.handler_hover:hover {
         -ms-transform: rotate(-90deg);
         -o-transform: rotate(-90deg);
         transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg); }
+        -moz-transform: rotate(-90deg);
+        margin-top: 0px; }
       .conteneur_caroussel .owl-nav .owl-prev {
         left: -6px;
         position: relative;
@@ -1195,8 +1196,7 @@ button.submit {
 
 @media screen and (max-width: 479px) {
   .head_page {
-    margin: 0 1% !important;
-    width: 130%; }
+    margin: 0 1% !important; }
 
   .conteneur_clubs_list {
     margin: 0 1%; }
