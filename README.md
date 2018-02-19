@@ -11,9 +11,29 @@ Fédération choisie : La fédération française de Roller Sport
 In case of panic :
 <https://symfony.com/doc/current/deployment.html>
 
-Note : En dehors des requirements basique de symfony3 il faut veiller à bien être en php7 + la ligne de commande est 
+# Deployment #
 
-`php -S 127.0.0.1:8000 -t public()`
+Note : 
 
+En dehors des requirements basique de symfony3 il faut veiller à bien être en php7 + la commande pour lancer est :
+
+`php -S 127.0.0.1:8000 -t public`
+
+# Build With #
+
+Symfony version 4.0
+SASS
+JS
+JQuery
+
+Plugin & Framework : 
+
+EasyAdmin
+OwlCarousel
+Monthly
+
+# Author #
+
+Valentin Leymonie
 
 
