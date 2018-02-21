@@ -828,6 +828,9 @@ div.handler_hover:hover {
   .conteneur_h1_blanc .fond_blanc {
     margin: 0 !important; }
 
+  .conteneur_h2 h2 {
+    font-size: 21px; }
+
   .formulaire {
     width: 100%;
     margin: 0 0%; }
